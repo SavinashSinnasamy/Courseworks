@@ -1,2 +1,2 @@
-public interface ShoppingManager {
+public interface ShoppingManager implements WestministerShoppingManager {
 }
