@@ -25,6 +25,11 @@ public class Clothing extends Product{
     }
 
     @Override
+    public double getProductPrice() {
+        return super.getProductPrice();
+    }
+
+    @Override
     public String toString(){
         return "Clothing Product : ID = " + getProductId() + ",Name = " + getProductName() + ", Number of Items = " + getNoOfItems() + ", Price = " + getProductPrice() + ", Colour = " + colour + ", Size" + size;
     }
