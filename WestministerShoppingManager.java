@@ -42,49 +42,4 @@ public class WestministerShoppingManager implements ShoppingManager {
     public void loadData(){
 
     }
-
-    public static void main (String [] Args){
-
-        System.out.println("====================================================================");
-        System.out.println("\t\t\t\t\tOnline Shopping System");
-        System.out.println("====================================================================");
-        System.out.println("Manager Option");
-        System.out.println("\t1 = Add new Product");
-        System.out.println("\t2 = Delete Product");
-        System.out.println("\t3 = View Products");
-        System.out.println("\t4 = Save setting\n");
-        System.out.println("User Option");
-        System.out.println("\t5 = if you are user");
-        System.out.println("Select any option if you are a manager, Select option 5 if you are user.");
-        Scanner input = new Scanner(System.in);
-        System.out.println("Select option :");
-        int option = input.nextInt();
-
-        switch (option){
-            case 1 :
-                System.out.println("==========================================================");
-                System.out.println("\t\t\t\t\tAdd new Product");
-                System.out.println("==========================================================");
-                break;
-            case 2:
-                System.out.println("==========================================================");
-                System.out.println("\t\t\t\t\tDelete Product");
-                System.out.println("==========================================================");
-                break;
-            case 3:
-                System.out.println("==========================================================");
-                System.out.println("\t\t\t\t\tView Products");
-                System.out.println("==========================================================");
-                break;
-            case 4:
-                System.out.println("==========================================================");
-                System.out.println("\t\t\t\t\tSave settings");
-                System.out.println("==========================================================");
-                break;
-            case 5:
-                System.out.println("==========================================================");
-                System.out.println("\t\t\t\t\tShooping cart");
-                System.out.println("==========================================================");
-        }
-    }
 }
