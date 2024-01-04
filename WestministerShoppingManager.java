@@ -5,7 +5,8 @@ public class WestministerShoppingManager implements ShoppingManager {
     private ArrayList <Product> SystemProducts = new ArrayList<Product>();
 /**
  * @param item -
- * @param systemProducts - */ //can be used to describe each parameter or method
+ * @param systemProducts -
+ * */ //can be used to describe each parameter or method
     public void addNewProduct(ArrayList <Product> systemProducts, Product item){
         systemProducts.add(item);
     }
@@ -43,6 +44,7 @@ public class WestministerShoppingManager implements ShoppingManager {
     }
 
     public static void main (String [] Args){
+
         System.out.println("====================================================================");
         System.out.println("\t\t\t\t\tOnline Shopping System");
         System.out.println("====================================================================");
@@ -84,5 +86,5 @@ public class WestministerShoppingManager implements ShoppingManager {
                 System.out.println("\t\t\t\t\tShooping cart");
                 System.out.println("==========================================================");
         }
-        ;}
+    }
 }
