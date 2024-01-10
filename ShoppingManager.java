@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public interface ShoppingManager  {
-    public void addNewProduct(ArrayList<Product> systemProducts, Product item);
-    public void deleteProduct(ArrayList <Product> systemProducts, Product item);
-    public void viewProducts(ArrayList <Product> systemProducts);
-    public void saveToFile(ArrayList <Product> systemProducts);
+    public void addNewProduct(Product item);
+    public void deleteProduct(String productCode);
+    public void viewProducts();
+    public void saveToFile();
     public void loadData();
 
 }

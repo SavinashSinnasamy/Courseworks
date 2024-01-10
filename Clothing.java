@@ -8,6 +8,9 @@ public class Clothing extends Product{
         this.size = size;
     }
 
+    public Clothing(String productId){
+        super(productId);
+    }
     public String getColour(){
         return colour;
     }
@@ -31,6 +34,6 @@ public class Clothing extends Product{
 
     @Override
     public String toString(){
-        return "Clothing Product : ID = " + getProductId() + ",Name = " + getProductName() + ", Number of Items = " + getNoOfItems() + ", Price = " + getProductPrice() + ", Colour = " + colour + ", Size" + size;
+        return "Clothing Product    : ID = " + getProductId() + ",Name = " + getProductName() + ", Number of Items = " + getNoOfItems() + ", Price = " + getProductPrice() + ", Colour = " + colour + ", Size = " + size;
     }
 }

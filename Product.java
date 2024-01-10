@@ -1,3 +1,6 @@
+import javax.swing.plaf.PanelUI;
+import java.security.PublicKey;
+
 abstract class Product {
     private String productId;
     private String productName;
@@ -18,7 +21,6 @@ abstract class Product {
     public String getProductId(){
         return productId;
     }
-
     public String getProductName(){
         return productName;
     }

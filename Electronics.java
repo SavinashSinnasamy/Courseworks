@@ -14,6 +14,9 @@ public class Electronics extends Product {
         this.brand = brand;
     }
 
+    public Electronics(String productId){
+        super(productId);
+    }
     public String getBrand(){
         return brand;
     }
@@ -36,6 +39,6 @@ public class Electronics extends Product {
 
     @Override
     public String toString(){
-        return "Electrionic Product : ID = " + getProductId() + ",Name = " + getProductName() + ", Number of Items = " + getNoOfItems() + ", Price = "+ getProductPrice() + ",Brand = " + brand + ", Warranty Period = " + warrantyPeriod;
+        return "Electronics Product : ID = " + getProductId() + ",Name = " + getProductName() + ", Number of Items = " + getNoOfItems() + ", Price = "+ getProductPrice() + ",Brand = " + brand + ", Warranty Period = " + warrantyPeriod;
     }
 }

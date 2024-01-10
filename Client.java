@@ -26,4 +26,6 @@ public class Client {
     public String toString() {
         return "Client username = " + username + ", password = " + password;
     }
+
+
 }

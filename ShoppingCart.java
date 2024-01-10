@@ -1,25 +1,22 @@
 import java.util.ArrayList;
 
 public class ShoppingCart{
-    private ArrayList <Product> ProductList = new ArrayList<Product>();
+    private ArrayList <Product> ShoppingProductList = new ArrayList<Product>();
 
 
 
     public void addProduct(Product product){
-        ProductList.add(product);
-
+        ShoppingProductList.add(product);
     }
     public void removeProduct(Product product){
-        ProductList.remove(product);
+        ShoppingProductList.remove(product);
         product.setNoOfItems(product.getNoOfItems() - 1);
-
     }
 
-    public double calculateTotal(ArrayList <Product> productList){
+    public double calculateTotal(){
         double finalPrice = 0;
-        for (Product item : productList){
+        for (Product item : ShoppingProductList){
             finalPrice = finalPrice +  item.getProductPrice();
-
         }
         return finalPrice;
     }
