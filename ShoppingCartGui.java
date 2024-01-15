@@ -1,17 +1,12 @@
-import javax.print.AttributeException;
 import javax.swing.*;
-import javax.swing.border.Border;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
 public class ShoppingCartGui extends JFrame {
-    private DefaultTableModel model;
+    private final DefaultTableModel model;
     ShoppingCart cartOptions = new ShoppingCart();
     String [] columns = {"Product", "Quantity", "Price"};
     JTable ShoppingTable;
@@ -22,8 +17,6 @@ public class ShoppingCartGui extends JFrame {
     String productId, category;
 
     ShoppingCartGui() {
-
-
         setLayout(new GridLayout(2, 1));
         model = new DefaultTableModel(columns, 0) {
             public boolean isCellEditable(int row, int column) { // this makes the cells un editable
@@ -52,7 +45,6 @@ public class ShoppingCartGui extends JFrame {
         remove.setVisible(true);
         upperPanel.add(scrollTablePane);
         add(upperPanel);
-
 
         JPanel lowerPanel = new JPanel(new GridLayout(4, 2, 50, 5));
         lowerPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
@@ -98,7 +90,7 @@ public class ShoppingCartGui extends JFrame {
 
         add(lowerPanel);
 
-        setVisible(false);
+    //    setVisible(false);
         setSize(500, 530);
         setDefaultCloseOperation(HIDE_ON_CLOSE);
         setTitle("Shopping cart");
@@ -109,7 +101,7 @@ public class ShoppingCartGui extends JFrame {
 
     public void updateShopTable(ArrayList<ShoppingCart> productList) {
         // Clear existing data in the table
-        if (model != null) {
+        //  if (model != null) {
             while (model.getRowCount() > 0) {
                 model.setRowCount(0);
             }
@@ -118,7 +110,7 @@ public class ShoppingCartGui extends JFrame {
                 Object[] rowData = {product.getName(), product.getCount(), product.getPrice()};
                 model.addRow(rowData);
             }
-        }
+        //}
     }
     public void addLabels(ArrayList<ShoppingCart> list) {
         if (!cartOptions.getArraylist().isEmpty() ) {
@@ -144,6 +136,7 @@ public class ShoppingCartGui extends JFrame {
             grand.setText(String.valueOf(0.0));
             System.out.println("No products added");
         }
+        updateShopTable(list);
     }
     private class MouseClicks extends MouseAdapter {
         public void mouseClicked(MouseEvent e) {
@@ -151,23 +144,8 @@ public class ShoppingCartGui extends JFrame {
             if (e.getSource() == remove) {
                 try {
                     //  ShoppingCartGuiOpening();
-                    String productName = ShoppingTable.getValueAt(clickedRow, 0).toString();
-                    String quantity = ShoppingTable.getValueAt(clickedRow, 1).toString();
-                    String productPrice = ShoppingTable.getValueAt(clickedRow, 2).toString();
-                    int pItems = Integer.parseInt(quantity);
-                    double price = Double.parseDouble(productPrice);
-                    for (ShoppingCart item : cartOptions.getArraylist()) {
-                        if (item.getName().equals(productName)) {
-                            productId = item.getProductId();
-                            category = item.getCategory();
-                            break;
-                        } else {
-                            System.out.println("Product is invalid");
-                        }
-                    }
-                    System.out.println(quantity + "    " + productPrice + "        " + productName);
-                    ShoppingCart cartIn = new ShoppingCart(productName, pItems, price, productId, category);
-                    cartOptions.removeProduct(cartOptions.getArraylist(),cartIn);
+                    ShoppingCart selectedProduct = cartOptions.getArraylist().get(clickedRow);
+                    cartOptions.removeProduct(cartOptions.getArraylist(), selectedProduct);
                     updateShopTable(cartOptions.getArraylist());
                     addLabels(cartOptions.getArraylist());
                 } catch (NullPointerException error) {

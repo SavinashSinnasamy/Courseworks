@@ -1,8 +1,11 @@
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.awt.event.*;
-import java.util.ArrayList;;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.ArrayList;
 
 public class WestminsterGui extends JFrame {
     private ShoppingCartGui instance;
@@ -20,7 +23,7 @@ public class WestminsterGui extends JFrame {
     String [] columnHeader = {"Product ID", "Name", "Category", "Price (£)", "Info"};
     private DefaultTableModel myModel;
 
-    private JComboBox <String> categorization;
+    private final JComboBox <String> categorization;
 
     public WestminsterGui() {
 
@@ -139,15 +142,13 @@ public class WestminsterGui extends JFrame {
         categorization.addActionListener(new ActionListeners());
         shoppingCartBtn.addMouseListener(new MouseClicks());
         productTable.addMouseListener(new MouseClicks());
-     //   addBtn.addMouseListener(new MouseClicks());
-        addBtn.addActionListener(new ActionListeners());
+        addBtn.addMouseListener(new MouseClicks());
     }
     private void ShoppingCartGuiOpening() {
         if (instance != null) {
             instance.updateShopTable(cartInstance.getArraylist());
             instance.addLabels(cartInstance.getArraylist());
             instance.setVisible(true);
-            System.out.println("new");
 
         } else {
             //Displaying the shopping cart without covering the shopping gui and the frame setup
@@ -157,7 +158,8 @@ public class WestminsterGui extends JFrame {
             int frame2LocY = (int) (frame1Loc.getY() + 80);
             instance.setLocation(frame2LocX, frame2LocY);
             instance.setVisible(true);
-            System.out.println("old");
+            instance.updateShopTable(cartInstance.getArraylist()); // added line
+            instance.addLabels(cartInstance.getArraylist()); // added line
         }
     }
     public void updateTable(ArrayList<Product> productList) {
@@ -183,6 +185,24 @@ public class WestminsterGui extends JFrame {
             if (e.getSource() == shoppingCartBtn) {
                 ShoppingCartGuiOpening();
             }
+
+            if (e.getSource() == addBtn) {
+                int clickedRow2 = productTable.getSelectedRow();
+                String productId = productTable.getValueAt(clickedRow2, 0).toString();
+                String productName = productTable.getValueAt(clickedRow2, 1).toString();
+                String category = productTable.getValueAt(clickedRow2, 2).toString();
+                String prices = productTable.getValueAt(clickedRow2, 3).toString();
+                productCount = 1;
+                double price = Double.parseDouble(prices);
+                System.out.println(productCount + "    " + productId + "        " + productName + "        " + category);
+                ShoppingCart cartIn = new ShoppingCart(productName, productCount, price, productId, category);
+                cartInstance.addProduct(cartInstance.getArraylist(), cartIn);
+                for (ShoppingCart item : cartInstance.getArraylist()) {
+                    System.out.println(item.toString());
+                }
+                ShoppingCartGuiOpening();
+            }
+
             int clickedRow = productTable.getSelectedRow();
             if (clickedRow != -1) {
                 productTable.setSelectionBackground(Color.CYAN);
@@ -250,8 +270,7 @@ public class WestminsterGui extends JFrame {
             };
             //calling the arraylist into the gui
             for (Product item : instanceArray) {
-                if (item instanceof Electronics) {
-                    Electronics electricItem = (Electronics) item;
+                if (item instanceof Electronics electricItem) {
                     Object[] productInfo = {electricItem.getProductId(), electricItem.getProductName(), "Electronics", electricItem.getProductPrice(), "Description"};
                     myModel.addRow(productInfo);
                     }
@@ -267,8 +286,7 @@ public class WestminsterGui extends JFrame {
             };
             //calling the arraylist into the gui
             for (Product item : instanceArray) {
-                if (item instanceof Clothing) {
-                    Clothing dress = (Clothing) item;
+                if (item instanceof Clothing dress) {
                     Object[] productInfo = {dress.getProductId(), dress.getProductName(), "Clothing", dress.getProductPrice(), "Description"};
                     myModel.addRow(productInfo);
                 }
@@ -284,34 +302,15 @@ public class WestminsterGui extends JFrame {
             };
             //calling the arraylist into the gui
             for (Product item : instanceArray) {
-                if (item instanceof Electronics) {
-                    Electronics electricItem = (Electronics) item;
+                if (item instanceof Electronics electricItem) {
                     Object[] productInfo = {electricItem.getProductId(), electricItem.getProductName(), "Electronics", item.getProductPrice(), "Description"};
                     myModel.addRow(productInfo);
-                } else if (item instanceof Clothing) {
-                    Clothing dress = (Clothing) item;
+                } else if (item instanceof Clothing dress) {
                     Object[] productInfo = {dress.getProductId(), dress.getProductName(), "Clothing", dress.getProductPrice(), "Description"};
                     myModel.addRow(productInfo);
                 }
             }
             productTable.setModel(myModel);
-
-        }
-        int clickedRow2 = productTable.getSelectedRow();
-        if (clickedRow2 != -1) {
-            String productId = productTable.getValueAt(clickedRow2, 0).toString();
-            String productName = productTable.getValueAt(clickedRow2, 1).toString();
-            String category = productTable.getValueAt(clickedRow2, 2).toString();
-            String prices = productTable.getValueAt(clickedRow2, 3).toString();
-            productCount = 1;
-            double price = Double.parseDouble(prices);
-            System.out.println(productCount + "    " + productId + "        " + productName + "        " + category);
-            ShoppingCart cartIn = new ShoppingCart(productName, productCount, price, productId, category);
-            cartInstance.addProduct(cartInstance.getArraylist(), cartIn);
-            for (ShoppingCart item : cartInstance.getArraylist() ) {
-                System.out.println(item.toString());
-            }
-            ShoppingCartGuiOpening();
         }
     }
 }
