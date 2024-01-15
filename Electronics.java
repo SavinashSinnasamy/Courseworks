@@ -1,4 +1,6 @@
-public class Electronics extends Product {
+import java.io.Serializable;
+
+public class Electronics extends Product implements Serializable {
 
     private String brand;
     private int warrantyPeriod;
@@ -24,11 +26,11 @@ public class Electronics extends Product {
         return warrantyPeriod;
     }
 
-    public void setBrand(){
+    public void setBrand(String brand){
         this.brand = brand;
     }
 
-    public void setWarrantyPeriod(){
+    public void setWarrantyPeriod(int warrantyPeriod){
         this.warrantyPeriod = warrantyPeriod;
     }
 
