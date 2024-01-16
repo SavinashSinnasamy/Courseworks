@@ -29,43 +29,26 @@ public class ShoppingCart {
 
     public void addProduct(ArrayList<ShoppingCart> list, ShoppingCart product1) { // made changes
         String productCode = product1.getProductId();
-        //  ArrayList<ShoppingCart> copyList = new ArrayList<>(list);
         for (Product item : WestminsterShoppingManager.systemProductsList) {
             if (item.getProductId().equals(productCode)) {
                 int num = item.getNoOfItems();
                 if (num > 0) {
                     list.add(product1);
-                    /*if(list.isEmpty()) {
-                        list.add(product1);
-                    }
-                    else {
-                        copyList.addAll(list);
-                        for (ShoppingCart item2 : list) {
-                            if (item2.getProductId().equals(product1.getProductId())) {
-                                item2.setCount(item2.getCount() + 1);
-                            } else { // Concurrency exception is occurred
-                                copyList.add(product1);
-                                list.clear();
-                            }
-                        }
-                        list.addAll(copyList);
-                               *//* loop = false;
-                                break;
-                            }
-                        }
-                        for (ShoppingCart item2 : ShoppingProductList) {
-                            if (loop) {
-                                item2.setCount(item2.getCount() + 1);
-                                break;
-                            }
+                    /*for (ShoppingCart item2 : list) {
+                        if (item2.getProductId().equals(product1.getProductId())) {
+                           // list.remove(product1);
+                            item2.setCount(item2.getCount() + 1);
+                        } else { // Concurrency exception is occurred
+                            list.add(product1);
                         }*/
-                }
-                    item.setNoOfItems(item.getNoOfItems()-1);
+
+                    item.setNoOfItems(item.getNoOfItems() - 1);
                 } else {
                     System.out.println("The product is not more available");
                 }
             }
         }
+    }
     public void removeProduct(ArrayList <ShoppingCart> list,ShoppingCart product) {
         String productCode = product.getProductId();
         for (Product item : WestminsterShoppingManager.systemProductsList) {
@@ -116,7 +99,7 @@ public class ShoppingCart {
                 clothingCount += 1;
             }
         }
-        if (electricCount >= 3 || clothingCount > 3) {
+        if (electricCount >= 3 || clothingCount >= 3) {
             discount2 = prices2 * 0.2;
         } else {
             discount2 = 0;

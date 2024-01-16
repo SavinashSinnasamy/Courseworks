@@ -138,7 +138,7 @@ public class WestminsterGui extends JFrame {
         // Event Handling
         //registering event handlers
         // ActionListeners handler = new ActionListeners();
-
+//made changes
         categorization.addActionListener(new ActionListeners());
         shoppingCartBtn.addMouseListener(new MouseClicks());
         productTable.addMouseListener(new MouseClicks());
@@ -186,7 +186,7 @@ public class WestminsterGui extends JFrame {
                 ShoppingCartGuiOpening();
             }
 
-            if (e.getSource() == addBtn) {
+            if (e.getSource() == addBtn) { //made changes
                 int clickedRow2 = productTable.getSelectedRow();
                 String productId = productTable.getValueAt(clickedRow2, 0).toString();
                 String productName = productTable.getValueAt(clickedRow2, 1).toString();

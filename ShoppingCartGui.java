@@ -139,7 +139,7 @@ public class ShoppingCartGui extends JFrame {
         updateShopTable(list);
     }
     private class MouseClicks extends MouseAdapter {
-        public void mouseClicked(MouseEvent e) {
+        public void mouseClicked(MouseEvent e) {   //made changes
             int clickedRow = ShoppingTable.getSelectedRow();
             if (e.getSource() == remove) {
                 try {
@@ -150,6 +150,8 @@ public class ShoppingCartGui extends JFrame {
                     addLabels(cartOptions.getArraylist());
                 } catch (NullPointerException error) {
                     System.out.println("error1");
+                } catch (IndexOutOfBoundsException err) {
+                    System.out.println("No product selected");
                 }
             }
         }

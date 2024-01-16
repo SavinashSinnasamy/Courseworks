@@ -20,14 +20,14 @@ public class WestminsterShoppingManager implements ShoppingManager, Serializable
                 if (productCode.equals(availableProduct)) {
                     productExistence = true;
                     System.out.print("Invalid ID, A product exist with the above ID, therefore Try Again..\n ");
-                    System.out.println("\n" + thing.toString());
+                    System.out.println("\n" + thing);
                     break;
                 }
             }
             if (!productExistence) {
                 System.out.println("The product added successfully");
                 systemProductsList.add(item);
-                System.out.println("\n" + item.toString());
+                System.out.println("\n" + item);
             }
 
         } else {
@@ -36,16 +36,15 @@ public class WestminsterShoppingManager implements ShoppingManager, Serializable
     }
     public void deleteProduct(String productCode ) {
         int totalCount = systemProductsList.size();
+        System.out.println(productCode);
         if (totalCount != 0){
             for (Product item : systemProductsList) {
+                System.out.println(item.getProductId());
                 if (productCode.equals(item.getProductId())) {
                     systemProductsList.remove(item);
                     System.out.print("The product has been deleted successfully");
                     totalCount = totalCount - 1;
                     System.out.println("\nNo of Products in the store : " + totalCount);
-                    break;
-                } else {
-                    System.out.println("The product doesn't exists");
                     break;
                 }
             }
