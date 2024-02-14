@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Members_Details</title>
+    
+    <style>
+
+
+      body{
+        background-image: linear-gradient(
+        rgba(0,0,0,0.50),
+        rgba(0,0,0,0.50)),
+        url(S3_Images/Student3_Mountains.jpg);
+        margin:0; /* To make no space between bar and page */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        z-index: -1; /* sending back */
+      }
+
+
+      #logo{
+        overflow:hidden;
+        position:absolute;
+
+        top: 0px; 
+        left:20px;
+        height:70px;
+
+        cursor: pointer;
+      }
+
+      .naviBar{
+          overflow: hidden;
+          position: fixed; /* Set the navbar to fixed position */
+          display: inline;
+
+          top: 0; /* Position the navbar at the top of the page */
+          width: 98%; /* Full width */
+          
+          border-bottom: 2px solid #95df1d;
+
+          background-color:transparent;
+          backdrop-filter: blur(10px);
+
+          text-align: right;
+          padding: 18px;
+          
+          z-index: 999;
+      }
+
+      .naviBar a{
+          color: white;
+          text-decoration: none;
+
+          font-size: 18px;
+          padding: 12px;
+          border-radius: 10px;
+      }
+
+      .naviBar a:hover{
+          color:#95df1d;
+          border-bottom: 2px solid;
+          border-color:#95df1d;
+          cursor: pointer;
+      }
+
+
+      .heading_text{
+        position: absolute;
+        top: 16%;
+        left: 50%;
+        transform: translate(-50%, -74%);
+        color:red;
+        text-overflow: ellipsis; 
+        overflow: hidden; 
+        white-space: nowrap;
+      }
+
+      .instruction{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        color:rgb(151, 10, 233);
+        text-overflow: ellipsis; 
+        overflow: hidden; 
+        white-space: nowrap;
+      }
+      .container{
+        position: relative;
+        margin-top: 35%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 6px solid green;
+        border-radius: 16px;
+        border-collapse: collapse;
+        width: 1000px;
+        height: 520px;
+        background-color:rgb(217, 237, 222);
+        color: greenyellow;
+      }
+
+      .image1{
+        position: absolute;
+        max-width: 250px;
+        max-height: 500px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+      }
+
+      .detail1{
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .text1{
+        position: absolute;
+        margin-top: 460px;
+        margin-left: 30px;
+        text-overflow: ellipsis; 
+        overflow: hidden; 
+        white-space: nowrap;
+      }
+
+      .image1:hover ~ .detail1 {
+        opacity: 1;
+      }
+
+      .image1:hover {
+        opacity: 0.7;
+      }
+
+      .image2{
+        position: absolute;
+        margin-left:250px;
+        max-width: 250px;
+        max-height: 500px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+      }
+
+      .detail2{
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .text2{
+        position: absolute;
+        margin-top: 460px;
+        margin-left: 280px;
+        text-overflow: ellipsis; 
+        overflow: hidden; 
+        white-space: nowrap;
+      }
+
+      .image2:hover ~ .detail2 {
+        opacity: 1;
+      }
+
+      .image2:hover {
+        opacity: 0.3;
+      }
+
+      .image3{
+        position: absolute;
+        margin-left:500px;
+        max-width: 250px;
+        max-height: 500px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+      }
+
+      .detail3{
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .text3{
+        position: absolute;
+        margin-top: 460px;
+        margin-left: 530px;
+        text-overflow: ellipsis; 
+        overflow: hidden; 
+        white-space: nowrap;
+      }
+
+      .image3:hover ~ .detail3 {
+        opacity: 1;
+      }
+
+      .image3:hover {
+        opacity: 0.3;
+      }
+
+      .image4{
+        position: absolute;
+        margin-left:750px;
+        max-width: 250px;
+        max-height: 500px;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+      }
+
+      .detail4{
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .text4{
+        position: absolute;
+        margin-top: 460px;
+        margin-left: 780px;
+        text-overflow: ellipsis; 
+        overflow: hidden; 
+        white-space: nowrap;
+      }
+
+      .image4:hover ~ .detail4 {
+        opacity: 1;
+      }
+
+      .image4:hover {
+        opacity: 0.3;
+      }
+
+
+      .aboutUs{
+          color: white;
+          font-size: 16px;
+          margin-left: 2%;
+      }
+
+      .aboutUs a:link{
+          color: white;
+      }
+
+      .aboutUs a:hover{
+          color: #95df1d;
+      }
+
+      .aboutUs a:visited{
+          color: white;
+      }
+
+      .upGo {
+          text-align: right;
+          margin-right: 2%;
+      }
+
+      .upGo input{
+          background-color: transparent;
+          backdrop-filter: blur(5px);
+
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 18px;
+          color:#95df1d;
+
+          border: 1px;
+          border-style: solid;
+          border-radius: 5px;
+          border-color: #95df1d;
+      }
+
+      .upGo input:hover{
+          color: white;
+          background-color: #95df1d;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="naviBar">  
+          <img src="S3_Images/Logo.jpg" alt="Logo" id="logo" onclick='window.location.href="S2_HomePage.html"'>
+          <a id="home" href="S2_HomePage.html">Home</a>
+          <a id="gallery" href="S4_Gallery.html">Gallery</a>
+          <a id="comment" href="S2_CommentsForm.html">Comment</a> 
+          <a id="shop" href="S1_buyProducts.html">Shop</a>
+          <a id="quiz" href="S3_Quiz.html">Quiz</a>
+          <a id="siteMap" href="S4_Sitemap.html">Site Map</a>
+          <a id="hotel" href="S3_hotel.html">Hotels </a>
+          <a id="about" href="S3_about_us.html">About us</a>
+      </div>
+  </header>
+
+
+
+    <h2 class="heading_text">Details of Developers</h2>
+    <p class="instruction" >Hover over the image to see the details.</p>
+
+    <div class="container">
+      <img src="S3_Images/Student1.jpg" alt="Avatar1" class="image1" >
+      <div class="detail1">
+        <p class="text1" style="color:red">Hasmithan Kumararaja<br>Role:Student1</p>
+      </div>
+      <img src="S3_Images/Student2.jpg" alt="Avatar2" class="image2" >
+      <div class="detail2">
+        <p class="text2" style="color:red">Savinash Sinnasamy<br>Role:Student2</p>
+      </div>
+      <img src="S3_Images/Student3.jpg" alt="Avatar3" class="image3" >
+      <div class="detail3">
+        <p class="text3" style="color:red">H.I.Ahamed Haseef<br>Role:Student3</p>
+      </div>
+      <img src="S3_Images/Student4.jpg" alt="Avatar4" class="image4" >
+      <div class="detail4">
+        <p class="text4" style="color:red">M. A. Mohamed Asaf<br>Role:Student4</p>
+      </div>
+    </div>
+
+        <!--  developer page anchor  -->
+
+
+    <div class="upGo">
+        <input type="button" value="Go up" onclick='window.location.href="S3_about_us.html"'>
+    </div>
+    
+    <hr>
+
+    <footer class="aboutUs">
+        <p> Author: Hafeelul Ilahi Ahamef Haseef<br>
+        <a href="S3_Page_Editor.html"> Page Developer Details </a> 
+        </p>
+    </footer>
+
+    <script>        
+      document.getElementById("about").style.backgroundColor="#95df1d";
+      document.getElementById("about").style.color="#054100";
+      document.getElementById("about").style.border="none";
+    </script>
+  
+  </body>
+</html>

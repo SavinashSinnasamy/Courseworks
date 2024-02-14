@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang = "en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Image Gallery</title>
+	
+	<link rel="stylesheet" href="S4_NavBar.css">
+	<link rel="stylesheet" href="S4_Gallery_styles.css">
+	
+	<script>
+        let Colours = ["lightcoral", "lightsalmon", "azure", "mediumspringgreen", "lightsteelblue", "mediumpurple"];//Array declaring colours that will be randomly chosen.
+
+        function Change_colour(Colour)//Function that accepts a colour variable as input  and changes the background accordingly.
+			{document.body.style.backgroundColor = Colour;}
+
+        function Random_colour()//Function that randomly selects a colour from the declared array and passes it into the Change_colour() function.
+            {let Random_index = Math.floor(Math.random() * Colours.length);
+             Change_colour(Colours[Random_index]);}
+			 
+		
+		document.getElementById("gallery").style.backgroundColor="#95df1d";//Code-block pertaining to the navigation bar.
+		document.getElementById("gallery").style.color="#054100";
+		document.getElementById("gallery").style.border="none";
+    </script>
+</head>
+
+<body>
+	<header>
+		<div class="naviBar">  
+			<img src="S4_Images/Logo.png" alt="Logo" id="logo" onclick='window.location.href="S2_HomePage.html"'>
+			<a id="home" href="S2_HomePage.html">Home</a>
+			<a id="gallery" href="S4_Gallery.html">Gallery</a>
+			<a id="comment" href="S2_CommentsForm.html">Comment</a> 
+			<a id="shop" href="S1_buyProducts.html">Shop</a>
+			<a id="quiz" href="S3_Quiz.html">Quiz</a>
+			<a id="siteMap" href="S4_Sitemap.html">Site Map</a>
+			<a id="visit">Visit Sri Lanka</a>
+			<a id="about" href="S3_about_us.html">About us</a>
+		</div>
+	</header>
+	
+	
+	<h1 style="color: #666666; text-align: center" ><br><br>Image Gallery</h1>
+	
+	<div class="button-container"><!-----------------------------------------------------------------------------------------<div> tag containing colour changing buttons-->
+        <button class="color-button" style="background-color: black" onclick="Change_colour('black')"></button>
+        <button class="color-button" style="background-color: powderblue" onclick="Change_colour('powderblue')"></button>
+        <button class="color-button" style="background-color: plum" onclick="Change_colour('plum')"></button>
+        <button class="color-button" style="background-color: palegreen" onclick="Change_colour('palegreen')"></button>
+        <button class="color-button" style="background-color: white; vertical-align: top;" onclick="Random_colour()">/</button>
+    </div>
+    
+	<div class = "container"><!----------------------------------------------------------------------<div> tag containing FIRST ROW of images begins-->
+		<div class = "gallery"><!--"gallery" divison begins-->
+			<div class= "img-box"><blockquote cite = "https://en.wikipedia.org/wiki/Colombo">
+								  <h4 style = "font-family: 'Tahoma'">Colombo<br>
+								  <br>The executive and judicial capital
+			                           and the largest city of Sri Lanka 
+									   by population. It is often referred
+									   to as the capital since Sri
+									   Jayawardanepura Kotte, the actual capital,
+									   is itself within the urban area of Colombo.
+								  </h4>
+								  </blockquote>
+								  </div>
+			<div class= "img-box"><blockquote cite = "https://en.wikipedia.org/wiki/Badulla">
+								  <h4 style = "font-family: 'Tahoma'">Badulla<br>
+								  <br>The largest city of Uva Provice; situated
+								      in the lower central hills of Sri Lanka.
+									  The regions varied geography has attracted
+									  eco-tourists from all corners of the globe.								  
+								  </h4>
+								  </blockquote>
+								  </div>
+			<div class= "img-box"><blockquote cite = "https://en.wikipedia.org/wiki/Sigiriya">
+								  <h4 style = "font-family: 'Tahoma'">Sigiriya<br>
+			                      <br>An ancient rock fortress located in the northern
+								      district of Matale near the town of Dambulla in
+									  the Central Province. Sigiriya today is a UNESCO
+									  listed World Heritage Site. It is one of the best
+									  preserved examples of ancient urban planning.
+								  </h4>
+								  </blockquote>
+								  </div>
+			<div class= "img-box"><blockquote cite = "https://en.wikipedia.org/wiki/Ella,_Sri_Lanka">
+								  <h4 style = "font-family: 'Tahoma'">Ella<br>
+								  <br>A picturesque hamlet in the Badulla District of Uva
+								      Province. The area is known for its rich bio-diversity,
+									  dense with numerous varieties of flora and fauna. The
+									  flanking hills and its elevation gives it a cool climate.
+								  </h4>
+								  </blockquote>
+								  </div>
+		</div><!--"gallery" divison ends-->
+	</div><!-----------------------------------------------------------------------------------------<div> tag containing FIRST ROW of images ends-->
+	
+	<br><br><hr class = "flared"><!--Flared horizontal rule for aesthetic purpose-->
+	
+	<div class = "container"><!----------------------------------------------------------------------<div> tag containing SECOND ROW of images begins-->
+		<div class = "gallery"><!--"gallery" divison begins-->
+			<div class= "img-box_2"><blockquote cite = "https://en.wikipedia.org/wiki/Kandy">
+									<h4 style = "font-family: 'Tahoma'">Kandy<br>
+			                        <br>The last capital of the anciet kings' era of 
+									    Sri Lanka. The city is situated in the midst
+										of hills in the Kandy plateau, which crosses
+										an area if tropical plantantions, mainly tea.
+									</h4>
+									</blockquote>
+									</div>
+			<div class= "img-box_2"><blockquote cite = "https://en.wikipedia.org/wiki/Mirissa">
+									<h4 style = "font-family: 'Tahoma'">Mirissa<br>
+									<br>A small town on the south coast of Sri Lanka,
+									    located in the Matara District of the Southern
+										Province. Owing to it's beach, vibrant nightlife,
+										and ample Whale and Dolphin wathcing locations;
+										it is a popular tourist destination.
+									</h4>
+									</blockquote>
+									</div>
+			<div class= "img-box_2"><blockquote cite = "https://en.wikipedia.org/wiki/Adam%27s_Peak">
+									<h4 style = "font-family: 'Tahoma'">Adams Peak<br>
+									<br>A sacred mountain in central Sri Lanka.With ties to 
+									    every major  religion in the country, local myths 
+										and legends, and geological significance. It has piqued
+										the interest of everyone from far and wide with its ever
+										evolving mythos.
+									</h4>
+									</blockquote>
+									</div>
+			<div class= "img-box_2"><blockquote cite = "https://en.wikipedia.org/wiki/Matale_District">
+									<h4 style = "font-family: 'Tahoma'">Matale<br>
+									<br>Located at the heart of the Central Highlands, the region 
+									    lies in a broad, green fertile valley. Speckled with waterfalls,
+									    lakes, grasslands, and mountain ranges, Matale is a yet another
+									    booming spot for eco-tourism.
+									</h4>
+									</blockquote>
+									</div>
+		</div><!--"gallery" divison ends-->	
+	</div><!-----------------------------------------------------------------------------------------<div> tag containing SECOND ROW of images ends-->
+	
+	<br><br><hr class = "flared"><!--Flared horizontal rule for aesthetic purpose-->
+	
+	<div class = "container"><!----------------------------------------------------------------------<div> tag containing THIRD ROW of images begins-->
+		<div class = "gallery"><!--"gallery" divison begins-->
+			<div class= "img-box_3"><blockquote cite = "https://en.wikipedia.org/wiki/Horton_Plains_National_Park">
+									<h4 style = "font-family: 'Tahoma'">Horton Plains<br>
+									<br>Encompassing an area of 31.6 km<sup>2</sup> and ascending
+									    over 2000 m from sea level, it encompasses a region of
+										montane grassland and cloud forest. The plateau is home to
+										innumerabale endemic flora and fauna, rolling hills, major 
+										tributaries, impressive waterfalls, and challenging treks.
+									</h4>
+									</blockquote>
+									</div>
+			<div class= "img-box_3"><blockquote cite = "https://en.wikipedia.org/wiki/Anuradhapura">
+									<h4 style = "font-family: 'Tahoma'">Anuradhapura<br>
+									<br>The capital city of the North Central Province. The city's
+									    past is inextricably tied to the very history of the country.
+										Being continually occupied for over three mellennia, the 
+										ruins that litter the city provides an outline of 
+										the Sri Lankan civilisation's growth thorugh the ages.		
+									</h4>
+									</blockquote>
+									</div>
+			<div class= "img-box_3"><blockquote cite = "https://en.wikipedia.org/wiki/Sinharaja_Forest_Reserve">
+									<h4 style = "font-family: 'Tahoma'">Sinharaja<br>
+									<br>A biodiversity hotspot, designated a World Heritage Site
+									    by UNESCO. It is the country's last viable area of primary
+										tropical rainforest. Over 60% of the trees, and over 40% of the
+										animals found here are endemic. The forest's dense fog and stygian
+										ambiance has given rise to many folk legends.
+									</h4>
+									</blockquote>
+									</div>
+			<div class= "img-box_3"><blockquote cite = "https://en.wikipedia.org/wiki/Yala_National_Park">
+									<h4 style = "font-family: 'Tahoma'">Yala<br>
+									<br>The most visited national park in the country. It boasts a
+									    vast array of animals, spread across many ecosystems. Tourists
+										often flock to catch glimpses of the Elephants, Crocodiles and Leopards.
+										Yala stands as a hopeful reminder of the need for environmental conveservation.
+									</h4>
+									</blockquote>
+									</div>
+		</div><!--"gallery" divison ends-->		
+	</div><!-----------------------------------------------------------------------------------------<div> tag containing THIRD ROW of images ends-->
+	
+	<br>
+	
+	<div class="upGo">
+        <input type="button" value="Go up" onclick='window.location.href="S4_Gallery.html"'>
+    </div>
+        
+    <hr>
+
+    <footer class="aboutUs">
+		<p> Author: M.A.M. Asaf <br>
+        <a href="S4_PageEditor.html"> Page Developer Details </a> 
+        </p>
+    </footer>
+
+</body>
+</html>

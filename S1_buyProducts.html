@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>BuyProducts</title>
+    <link rel="stylesheet" href="S1_StyleSheet.css">
+</head>
+
+<body class="presentationBody">
+    <header>
+        <div class="naviBar">
+            <img src="S1_Images//Logo.png" alt="Logo" id="logo" onclick='window.location.href="S2_HomePage.html"'>
+            <a id="home" href="S2_HomePage.html">Home</a>
+            <a id="gallery" href="S4_Gallery.html">Gallery</a>
+            <a id="comment" href="S2_CommentsForm.html">Comment</a>
+            <a id="shop" href="S1_buyProducts.html">Shop</a>
+            <a id="quiz" href="S3_Quiz.html">Quiz</a>
+            <a id="siteMap" href="S4_Sitemap.html">Site Map</a>
+            <a id="about" href="S3_about_us.html">About us </a>
+        </div>
+    </header>
+    <div style="display: inline-block;">
+        <h1 class="storeHeading"> Welcome to the Store of The Pearl !!</h1>
+        <button id="viewCart" onclick="myFunctions()"> View Cart </button>
+    </div>
+    <div id="myCart">
+        <h2> Your Cart </h2>
+        <hr>
+        <!---------------------------------------------------------------------->
+        <div class="cart-product" id="product1">
+            <img class="cart-Image" src="S1_Images/ceylonCity.jpg" alt="Ceylon City Hotel, Colombo">
+            <p class="cart-name"> Ceylon City Hotel, Colombo
+                <span class="cart-price" id="price1"> 0 </span>
+            </p>
+            <p>&#36 50.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement()"> remove </button>
+                <button class="decrease" onclick="decreaseVal()"> - </button>
+                <div class="count" id="count1"> 0 </div>
+                <button class="increase" onclick="increaseVal()"> + </button>
+            </div>
+        </div>
+        <div class="cart-product" id="product2">
+            <img class="cart-Image" src="S1_Images/jaffna.jpg" alt="Jaffna Heritage Hotel">
+            <p class="cart-name"> Jaffna Heritage Hotel
+                <span class="cart-price" id="price2"> 0 </span>
+            </p>
+            <p>&#36 25.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement2()"> remove </button>
+                <button class="decrease" onclick="decreaseVal2()"> - </button>
+                <div class="count" id="count2"> 0 </div>
+                <button class="increase" onclick="increaseVal2()"> + </button>
+            </div>
+        </div>
+        <div class="cart-product" id="product3">
+            <img class="cart-Image" src="S1_Images/hambanthota.jpeg" alt="Jade Green Hambanthota">
+            <p class="cart-name"> Jade Green Hambanthota
+                <span class="cart-price" id="price3"> 0 </span>
+            </p>
+            <p>&#36 28.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement3()"> remove </button>
+                <button class="decrease" onclick="decreaseVal3()"> - </button>
+                <div class="count" id="count3"> 0 </div>
+                <button class="increase" onclick="increaseVal3()"> + </button>
+            </div>
+        </div>
+        <div class="cart-product" id="product4">
+            <img class="cart-Image" src="S1_Images/galle.jpg" alt="Galle Fort Hotel">
+            <p class="cart-name"> Galle Fort Hotel
+                <span class="cart-price" id="price4"> 0 </span>
+            </p>
+            <p>&#36 10.0</p>
+            <div class="counter">
+                <button type="button" class="remove" onclick="removeElement3()"> remove </button>
+                <button type="button" class="decrease" onclick="decreaseval4()"> - </button>
+                <div class="count" id="count4"> 0 </div>
+                <button type="button" class="increase" onclick="increaseval4()"> + </button>
+            </div>
+        </div>
+        <div class="cart-product" id="product5">
+            <img class="cart-Image" src="S1_Images/kandy.jpg" alt="Kandy City Hotel by Earl's">
+            <p class="cart-name"> Kandy City Hotel by Earl's
+                <span class="cart-price" id="price5"> 0 </span>
+            </p>
+            <p>&#36 55.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement5()"> remove </button>
+                <button class="decrease" onclick="decreaseVal5()"> - </button>
+                <div class="count" id="count5"> 0 </div>
+                <button class="increase" onclick="increaseVal5()"> + </button>
+            </div>
+        </div>
+        <div class="cart-product" id="product6">
+            <img class="cart-Image" src="S1_Images/colombo.jpg" alt="Metro City Hotel, Colombo">
+            <p class="cart-name"> Metro City Hotel, Colombo
+                <span class="cart-price" id="price6"> 0 </span>
+            </p>
+            <p>&#36 40.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement6()"> remove </button>
+                <button class="decrease" onclick="decreaseVal6()"> - </button>
+                <div class="count" id="count6"> 0 </div>
+                <button class="increase" onclick="increaseVal6()"> + </button>
+            </div>
+        </div>
+        <!---------------------------------------------------------------------->
+        <div class="cart-product" id="product7">
+            <img class="cart-Image" src="S1_Images/anuradhapuraGuide.jpg" alt="Anuradhapura Travel guide">
+            <p class="cart-name">Anuradhapura Travel guide
+                <span class="cart-price" id="price7"> 0 </span>
+            </p>
+            <p>&#36 5.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement7()"> remove </button>
+                <button class="decrease" onclick="decreaseVal7()"> - </button>
+                <div class="count" id="count7"> 0 </div>
+                <button class="increase" onclick="increaseVal7()"> + </button>
+            </div>
+        </div>
+        <div class="cart-product" id="product8">
+            <img class="cart-Image" src="S1_Images/colomboGuide.png" alt="Colombo City Travel guide">
+            <p class="cart-name"> Colombo City Travel guide
+                <span class="cart-price" id="price8"> 0 </span>
+            </p>
+            <p>&#36 7.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement8()"> remove </button>
+                <button class="decrease" onclick="decreaseVal8()"> - </button>
+                <div class="count" id="count8"> 0 </div>
+                <button class="increase" onclick="increaseVal8()"> + </button>
+            </div>
+        </div>
+        <div class="cart-product" id="product9">
+            <img class="cart-Image" src="S1_Images/galleGuide.jpg" alt="Galle Travel guide">
+            <p class="cart-name"> Galle Travel guide
+                <span class="cart-price" id="price9"> 0 </span>
+            </p>
+            <p>&#36 3.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement9()"> remove </button>
+                <button class="decrease" onclick="decreaseVal9()"> - </button>
+                <div class="count" id="count9"> 0 </div>
+                <button class="increase" onclick="increaseVal9()"> + </button>
+            </div>
+        </div>
+        <div class="cart-product" id="product10">
+            <img class="cart-Image" src="S1_Images/kandyGuide.jpg" alt="Kandy Travel guide">
+            <p class="cart-name"> Kandy Travel guide
+                <span class="cart-price" id="price10"> 0 </span>
+            </p>
+            <p>&#36 10.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement10()"> remove </button>
+                <button class="decrease" onclick="decreaseVal10()"> - </button>
+                <div class="count" id="count10"> 0 </div>
+                <button class="increase" onclick="increaseVal10()"> + </button>
+            </div>
+        </div>
+        <div class="cart-product" id="product11">
+            <img class="cart-Image" src="S1_Images/nuwaraEliyaGuide.png" alt="Nuwara Eliya Travel guide">
+            <p class="cart-name"> Nuwara Eliya Travel guide
+                <span class="cart-price" id="price11"> 0 </span>
+            </p>
+            <p>&#36 5.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement11()"> remove </button>
+                <button class="decrease" onclick="decreaseVal11()"> - </button>
+                <div class="count" id="count11"> 0 </div>
+                <button class="increase" onclick="increaseVal11()"> + </button>
+            </div>
+        </div>
+        <div class="cart-product" id="product12">
+            <img class="cart-Image" src="S1_Images/hambanthotaGuide.jpg" alt="Hambanthota Travel guide">
+            <p class="cart-name"> Hambanthota Travel guide
+                <span class="cart-price" id="price12"> 0 </span>
+            </p>
+            <p>&#36 5.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement12()"> remove </button>
+                <button class="decrease" onclick="decreaseVal12()"> - </button>
+                <div class="count" id="count12"> 0 </div>
+                <button class="increase" onclick="increaseVal12()"> + </button>
+            </div>
+        </div>
+        <div class="cart-product" id="product13">
+            <img class="cart-Image" src="S1_Images/car.jpg" alt="Car">
+            <p class="cart-name"> Car
+                <span class="cart-price" id="price13"> 0 </span>
+            </p>
+            <p>&#36 12.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement13()"> remove </button>
+                <button class="decrease" onclick="decreaseVal13()"> - </button>
+                <div class="count" id="count13"> 0 </div>
+                <button class="increase" onclick="increaseVal13()"> + </button>
+            </div>
+        </div>
+        <div class="cart-product" id="product14">
+            <img class="cart-Image" src="S1_Images/bike.jpg" alt="Bike">
+            <p class="cart-name"> Bike
+                <span class="cart-price" id="price14"> 0 </span>
+            </p>
+            <p>&#36 9.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement14()"> remove </button>
+                <button class="decrease" onclick="decreaseVa14()"> - </button>
+                <div class="count" id="count14"> 0 </div>
+                <button class="increase" onclick="increaseVal14()"> + </button>
+            </div>
+        </div>
+        <div class="cart-product" id="product15">
+            <img class="cart-Image" src="S1_Images/van.jpg" alt="Van">
+            <p class="cart-name"> Van
+                <span class="cart-price" id="price15"> 0 </span>
+            </p>
+            <p>&#36 15.0</p>
+            <div class="counter">
+                <button class="remove" onclick="removeElement15()"> remove </button>
+                <button class="decrease" onclick="decreaseVal15()"> - </button>
+                <div class="count" id="count15"> 0 </div>
+                <button class="increase" onclick="increaseVal15()"> + </button>
+            </div>
+        </div>
+        <hr>
+        <div class="cart-footer">
+            <div class="BuyProductsTotal">
+                <p> Total: &#36 <span id="totalVal"> 0 </span> </p>
+                <p> Total Number of items: <span id="totalNo"> 0 </span> </p>
+            </div>
+            <button id="buyButton" onclick="displayBill()"> Buy Now </button>
+        </div>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------->
+        <!--Buy Products page-->
+    </div>
+    <div class="heading3">
+        <h3 class="heading3Text"> Accomodation </h3>
+    </div>
+    <div class=" test">
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images/ceylonCity.jpg" alt="Ceylon City Hotel, Colombo">
+            <p class="price"> &#36 50.0 </p>
+            <br>
+            <button class="order" onclick="addElement()"> Book Now </button>
+            <div class="detail">
+                <p class="name"> Ceylon City Hotel, Colombo </p>
+                <a href="http://ceyloncityhotels.com/" class="readMore"> read more </a>
+            </div>
+        </div>
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images/jaffna.jpg" alt="Jaffna Heritage Hotel">
+            <p class="price" class="readMore"> &#36 25.0 </p>
+            <br>
+            <button class="order" onclick="addElement2()"> Book Now </button>
+            <div class="detail">
+                <p class="name"> Jaffna Heritage Hotel </p>
+                <a href="https://jaffnaheritage.lk/hotel/" class="readMore"> read more </a>
+            </div>
+        </div>
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images/hambanthota.jpeg" alt="Jade Green Hambanthota">
+            <p class="price"> &#36 28.0 </p>
+            <br>
+            <button class="order" onclick="addElement3()"> Book now </button>
+            <div class="detail">
+                <p class="name"> Jade Green Hambanthota </p>
+                <a href="https://www.agoda.com/jade-green-hambantota/hotel/yala-lk.html?cid=-42" class="readMore"> read
+                    more </a>
+            </div>
+        </div>
+        <br>
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images/galle.jpg" alt="Galle Fort Hotel">
+            <p class="price"> &#36 10.0 </p>
+            <br>
+            <button class="order" onclick="addElement4()"> Book Now </button>
+            <div class="detail">
+                <p class="name"> Galle Fort Hotel </p>
+                <a href="https://www.galleforthotel.com/" class="readMore"> read more </a>
+            </div>
+        </div>
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images/kandy.jpg" alt="Kandy City Hotel by Earl's">
+            <p class="price"> &#36 55.0 </p>
+            <br>
+            <button class="order" onclick="addElement5()"> Book Now </button>
+            <div class="detail">
+                <p class="name"> Kandy City Hotel by Earl's </p>
+                <a href="https://www.expedia.com/Hotel-Search?selected=12410934&locale=en_US&HotelID=12410934&siteid=1&semcid=US.UB.BING.PT-c-EN.HOTEL&semdtl=a1429009570.b11317216326851220.g1kwd-82326765661389.e1c.m1baa8cc2cfd081be02681a89133e6bf40.r1a4723b6c9024fa6667d790ff99d4fdfab30779f8a9f79fd67ba97544d8583e74.c1-2Pv16WfnOk9zBs1CcBOiQ.j1142092.k1147923.d182326240837670.h1e.i1.l1.n1.o1.p1.q1.s1.t1.x1.f1.u1.v1.w1&msclkid=baa8cc2cfd081be02681a89133e6bf40"
+                    class="readMore"> read more </a>
+            </div>
+        </div>
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images\colombo.jpg" alt="Metro City Hotel, Colombo">
+            <p class="price"> &#36 40.0</p>
+            <br>
+            <button class="order" onclick="addElement6()"> Book Now </button>
+            <div class="detail">
+                <p class="name"> Metro City Hotel, Colombo </p>
+                <a href="https://metro-city-hotel.hotelsincolombo.org/en/" class="readMore"> read more </a>
+            </div>
+        </div>
+    </div>
+    <div class="heading3">
+        <h3 class="heading3Text"> Sri Lanka Brochures </h3>
+    </div>
+    <div class=" test">
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images\anuradhapuraGuide.jpg" alt="Anuradhapura Travel guide">
+            <p class="price"> &#36 5.0 </p>
+            <br>
+            <button class="order" onclick="addElement7()"> place order </button>
+            <div class="detail">
+                <p class="name"> Anuradhapura Travel guide </p>
+            </div>
+        </div>
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images\colomboGuide.png" alt="Colombo City Travel guide">
+            <p class="price"> &#36 7.0 </p>
+            <br>
+            <button class="order" onclick="addElement8()"> place order </button>
+            <div class="detail">
+                <p class="name"> Colombo City Travel guide </p>
+            </div>
+        </div>
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images\galleGuide.jpg" alt="Galle Travel guide">
+            <p class="price"> &#36 3.0 </p>
+            <br>
+            <button class="order" onclick="addElement9()"> place order </button>
+            <div class="detail">
+                <p class="name"> Galle Travel guide </p>
+            </div>
+        </div>
+        <br>
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images\kandyGuide.jpg" alt="Kandy Travel guide">
+            <p class="price"> &#36 10.0 </p>
+            <br>
+            <button class="order" onclick="addElement10()"> place order </button>
+            <div class="detail">
+                <p class="name"> Kandy Travel guide </p>
+            </div>
+        </div>
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images\nuwaraEliyaGuide.png" alt="Nuwara Eliya Travel guide">
+            <p class="price"> &#36 5.0 </p>
+            <br>
+            <button class="order" onclick="addElement11()"> place order </button>
+            <div class="detail">
+                <p class="name"> Nuwara Eliya Travel guide </p>
+            </div>
+        </div>
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images\hambanthotaGuide.jpg" alt="Hambanthota Travel guide">
+            <p class="price"> &#36 5.0 </p>
+            <br>
+            <button class="order" onclick="addElement12()"> place order </button>
+            <div class="detail">
+                <p class="name"> Hambanthota Travel guide </p>
+            </div>
+        </div>
+    </div>
+    <div class="heading3">
+        <h3 class="heading3Text"> Transport Amendities </h3>
+    </div>
+    <div class=" test">
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images\car.jpg" alt="Car">
+            <p class="price"> &#36 12.0 per day </p>
+            <br>
+            <button class="order" onclick="addElement13()"> Get ride </button>
+            <div class="detail">
+                <p class="name"> Rent a car </p>
+            </div>
+        </div>
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images\bike.jpg" alt="Bike">
+            <p class="price"> &#36 9.0 per day </p>
+            <br>
+            <button class="order" onclick="addElement14()"> Get ride </button>
+            <div class="detail">
+                <p class="name"> Rent a bike </p>
+            </div>
+        </div>
+        <div class="product">
+            <img class="buyProductImage" src="S1_Images\van.jpg" alt="Van">
+            <p class="price"> &#36 15.0 per day</p>
+            <br>
+            <button class="order" onclick="addElement15()"> Get ride </button>
+            <div class="detail">
+                <p class="name"> Rent a van </p>
+                <p> </p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <!------------------------------------------------------------------------------->
+    <!--------Payment summary Division------------->
+    <div id="paymentBill">
+        <div id="paymentBillHeader">
+            <h1 id="paymentHeading1"> Make your payment here</h1>
+            <button id="cancel" type="reset" onclick="closeBill()"> Cancel </button>
+        </div>
+        <br>
+        <form id="form">
+            <div class="paymentFormbox">
+                <h2> Purchase Summary </h2>
+                <hr class="headerLine">
+                <div class="formAlignment">
+                    <div class="formDiv">
+                        <p> Total Amount : &#36 <span id="totalSum"> </span> </p>
+                    </div>
+                    <div class="formDiv">
+                        <p> Number of total items: <span id="NumSum"> </span> items </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <section class="paymentFormbox">
+                <h2 class="formDiv"> Enter your Personal Details </h2>
+                <hr class="headerLine">
+                <br>
+                <div class="formAlignment">
+                    <div class="formDiv">
+                        <label class="labels" for="paymentFirstName"> First Name : </label>
+                        <input class="formInput" type="text" name="paymentFirstName" placeholder="Enter your first name"
+                            required>
+                    </div>
+                    <div class="formDiv">
+                        <label class="labels" for="paymentSecondName"> Last Name : </label>
+                        <input class="formInput" type="text" name="paymentSecondName"
+                            placeholder="Enter your second name">
+                    </div>
+                    <div class="formDiv">
+                        <label class="labels" for="paymentEAddress"> Email Address : </label>
+                        <input class="formInput" type="email" name="paymentEAddress"
+                            placeholder="Enter your email address" required>
+                    </div>
+                    <div class="formDiv">
+                        <label class="labels" for="paymentTelephone"> Telephone : </label>
+                        <input class="formInput" type="tel" name="paymentTelephone"
+                            placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="formDiv">
+                        <label class="labels" for="DeliveryAddress1"> Delivery Address Line 1 : </label>
+                        <input class="formInput" name="DeliveryAddress1:" placeholder="Line 1" required>
+                    </div>
+                    <div class="formDiv">
+                        <label class="labels" for="DeliveryAddress2"> Address Line 2 : </label>
+                        <input class="formInput" name="DeliveryAddress2:" placeholder="Line 2" required>
+                    </div>
+                    <div class="formDiv">
+                        <label class="labels" for="DeliveryAddress3"> Address Line 3 : </label>
+                        <input class="formInput" name="DeliveryAddress3:" placeholder="Line 3">
+                    </div>
+                    <div class="formDiv">
+                        <label class="labels" for="paymentPostalCode"> Postal / Zip Code : </label>
+                        <input class="formInput" type="number" name="paymentPostalCode"
+                            placeholder="Enter Postal/Zip Code" required </div>
+                        <div class="formDiv">
+                            <!-- code taken from : https://www.html-code-generator.com/html/drop-down/country-names-->
+                            <label class="labels" for="country"> Country : </label>
+                            <!-- to get the world countries in a drop down list-->
+                            <select class="formInput" name="country" required>
+                                <option> select country </option>
+                                <option value="AF">Afghanistan</option>
+                                <option value="AX">Aland Islands</option>
+                                <option value="AL">Albania</option>
+                                <option value="DZ">Algeria</option>
+                                <option value="AS">American Samoa</option>
+                                <option value="AD">Andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AI">Anguilla</option>
+                                <option value="AQ">Antarctica</option>
+                                <option value="AG">Antigua and Barbuda</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BM">Bermuda</option>
+                                <option value="BT">Bhutan</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                <option value="BA">Bosnia and Herzegovina</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BV">Bouvet Island</option>
+                                <option value="BR">Brazil</option>
+                                <option value="IO">British Indian Ocean Territory</option>
+                                <option value="BN">Brunei Darussalam</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="BF">Burkina Faso</option>
+                                <option value="BI">Burundi</option>
+                                <option value="KH">Cambodia</option>
+                                <option value="CM">Cameroon</option>
+                                <option value="CA">Canada</option>
+                                <option value="CV">Cape Verde</option>
+                                <option value="KY">Cayman Islands</option>
+                                <option value="CF">Central African Republic</option>
+                                <option value="TD">Chad</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="CX">Christmas Island</option>
+                                <option value="CC">Cocos (Keeling) Islands</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros</option>
+                                <option value="CG">Congo</option>
+                                <option value="CD">Congo, Democratic Republic of the Congo</option>
+                                <option value="CK">Cook Islands</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CI">Cote D'Ivoire</option>
+                                <option value="HR">Croatia</option>
+                                <option value="CU">Cuba</option>
+                                <option value="CW">Curacao</option>
+                                <option value="CY">Cyprus</option>
+                                <option value="CZ">Czech Republic</option>
+                                <option value="DK">Denmark</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica</option>
+                                <option value="DO">Dominican Republic</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GQ">Equatorial Guinea</option>
+                                <option value="ER">Eritrea</option>
+                                <option value="EE">Estonia</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FK">Falkland Islands (Malvinas)</option>
+                                <option value="FO">Faroe Islands</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="GF">French Guiana</option>
+                                <option value="PF">French Polynesia</option>
+                                <option value="TF">French Southern Territories</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="GE">Georgia</option>
+                                <option value="DE">Germany</option>
+                                <option value="GH">Ghana</option>
+                                <option value="GI">Gibraltar</option>
+                                <option value="GR">Greece</option>
+                                <option value="GL">Greenland</option>
+                                <option value="GD">Grenada</option>
+                                <option value="GP">Guadeloupe</option>
+                                <option value="GU">Guam</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GG">Guernsey</option>
+                                <option value="GN">Guinea</option>
+                                <option value="GW">Guinea-Bissau</option>
+                                <option value="GY">Guyana</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HM">Heard Island and Mcdonald Islands</option>
+                                <option value="VA">Holy See (Vatican City State)</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IN">India</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IR">Iran, Islamic Republic of</option>
+                                <option value="IQ">Iraq</option>
+                                <option value="IE">Ireland</option>
+                                <option value="IM">Isle of Man</option>
+                                <option value="IL">Israel</option>
+                                <option value="IT">Italy</option>
+                                <option value="JM">Jamaica</option>
+                                <option value="JP">Japan</option>
+                                <option value="JE">Jersey</option>
+                                <option value="JO">Jordan</option>
+                                <option value="KZ">Kazakhstan</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KI">Kiribati</option>
+                                <option value="KP">Korea, Democratic People's Republic of</option>
+                                <option value="KR">Korea, Republic of</option>
+                                <option value="XK">Kosovo</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="KG">Kyrgyzstan</option>
+                                <option value="LA">Lao People's Democratic Republic</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LB">Lebanon</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libyan Arab Jamahiriya</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MO">Macao</option>
+                                <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                                <option value="MG">Madagascar</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MH">Marshall Islands</option>
+                                <option value="MQ">Martinique</option>
+                                <option value="MR">Mauritania</option>
+                                <option value="MU">Mauritius</option>
+                                <option value="YT">Mayotte</option>
+                                <option value="MX">Mexico</option>
+                                <option value="FM">Micronesia, Federated States of</option>
+                                <option value="MD">Moldova, Republic of</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia</option>
+                                <option value="ME">Montenegro</option>
+                                <option value="MS">Montserrat</option>
+                                <option value="MA">Morocco</option>
+                                <option value="MZ">Mozambique</option>
+                                <option value="MM">Myanmar</option>
+                                <option value="NA">Namibia</option>
+                                <option value="NR">Nauru</option>
+                                <option value="NP">Nepal</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="AN">Netherlands Antilles</option>
+                                <option value="NC">New Caledonia</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="NU">Niue</option>
+                                <option value="NF">Norfolk Island</option>
+                                <option value="MP">Northern Mariana Islands</option>
+                                <option value="NO">Norway</option>
+                                <option value="OM">Oman</option>
+                                <option value="PK">Pakistan</option>
+                                <option value="PW">Palau</option>
+                                <option value="PS">Palestinian Territory, Occupied</option>
+                                <option value="PA">Panama</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PN">Pitcairn</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="QA">Qatar</option>
+                                <option value="RE">Reunion</option>
+                                <option value="RO">Romania</option>
+                                <option value="RU">Russian Federation</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="BL">Saint Barthelemy</option>
+                                <option value="SH">Saint Helena</option>
+                                <option value="KN">Saint Kitts and Nevis</option>
+                                <option value="LC">Saint Lucia</option>
+                                <option value="MF">Saint Martin</option>
+                                <option value="PM">Saint Pierre and Miquelon</option>
+                                <option value="VC">Saint Vincent and the Grenadines</option>
+                                <option value="WS">Samoa</option>
+                                <option value="SM">San Marino</option>
+                                <option value="ST">Sao Tome and Principe</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="SN">Senegal</option>
+                                <option value="RS">Serbia</option>
+                                <option value="CS">Serbia and Montenegro</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SX">Sint Maarten</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="SB">Solomon Islands</option>
+                                <option value="SO">Somalia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                <option value="SS">South Sudan</option>
+                                <option value="ES">Spain</option>
+                                <option value="LK">Sri Lanka</option>
+                                <option value="SD">Sudan</option>
+                                <option value="SR">Suriname</option>
+                                <option value="SJ">Svalbard and Jan Mayen</option>
+                                <option value="SZ">Swaziland</option>
+                                <option value="SE">Sweden</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="SY">Syrian Arab Republic</option>
+                                <option value="TW">Taiwan, Province of China</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania, United Republic of</option>
+                                <option value="TH">Thailand</option>
+                                <option value="TL">Timor-Leste</option>
+                                <option value="TG">Togo</option>
+                                <option value="TK">Tokelau</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago</option>
+                                <option value="TN">Tunisia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TC">Turks and Caicos Islands</option>
+                                <option value="TV">Tuvalu</option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="AE">United Arab Emirates</option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <option value="UM">United States Minor Outlying Islands</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="UZ">Uzbekistan</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Viet Nam</option>
+                                <option value="VG">Virgin Islands, British</option>
+                                <option value="VI">Virgin Islands, U.s.</option>
+                                <option value="WF">Wallis and Futuna</option>
+                                <option value="EH">Western Sahara</option>
+                                <option value="YE">Yemen</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                            </select>
+                        </div>
+                        <div> <button id="reset" type="reset"> Reset </button></div>
+                    </div>
+            </section>
+            <br>
+            <section class="paymentFormbox">
+                <h2 class="formDiv"> Enter your Bank details</h2>
+                <hr class="headerLine">
+                <div class="formAlignment">
+                    <div class="radioButtons">
+                        <input type="radio" name="payCard" class="formDiv" required>
+                        <label for="payCard"> Master Card </label>
+                    </div>
+                    <div class="radioButtons">
+                        <input type="radio" name="payCard" class="formDiv">
+                        <label for="payCard"> VISA card</label>
+                    </div>
+                    <div class="formDiv">
+                        <label class="labels" for="paymentCardNo"> Card Number : </label>
+                        <input class="formInput" type="password" name="paymentCardNo"
+                            placeholder="Enter your card number" required>
+                    </div>
+                    <div class="formDiv">
+                        <label class="labels" for="paymentCardName"> Card Holder Name : </label>
+                        <input class="formInput" type="text" name="paymentCardName" placeholder="Enter your card name"
+                            required>
+                    </div>
+                    <div class="formDiv">
+                        <label class="labels" for="paymentDate"> Expiry Date : </label>
+                        <input class="formInput" type="month" name="paymentDate" required>
+                    </div>
+                    <div class="formDiv">
+                        <label class="labels" for="paymentCVC"> CVC Code : </label>
+                        <input class="formInput" type="number" name="paymentCVC" placeholder="Enter your CVC number"
+                            required>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <div id="paymentButton">
+                <button id="submitButton" onclick="alertFun()"> Submit </button>
+                <button id="clearButton"> Clear Data</button>
+            </div>
+        </form>
+    </div>
+    <!------------------------------------------------------------------------------------------->
+    <div class="upGo">
+        <input type="button" value="Go up" onclick='window.location.href="S1_HistoryofSriLanka.html"'>
+    </div>
+
+    <hr>
+    <footer class="aboutUs">
+        <p> Author: Savinash Sinnasamy <br>
+            <a href="S1_PageEditor.html"> Page Developer Details </a>
+        </p>
+    </footer>
+    <!-----------------------JavaScript--------------------------->
+    <script>
+
+        /* JS to show active page should be pasted in each page*/
+        document.getElementById("shop").style.backgroundColor = "#95df1d";
+        document.getElementById("shop").style.color = "#054100";
+        document.getElementById("shop").style.border = "none";
+
+        function myFunctions() {
+            var x = document.getElementById("myCart");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        //---------------------------------------------------------->
+        function addElement() {
+            if (document.getElementById("product1").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product1").style.display = "block";
+            }
+        }
+        let val1 = 0;
+        document.getElementById("count1").innerText = val1;
+        function increaseVal() {
+            val1 = val1 + 1;
+            document.getElementById("count1").innerText = val1;
+            document.getElementById("price1").innerText = val1 * 50;
+            lastTotal();
+            totalNotZero();
+        }
+        function decreaseVal() {
+            if (val1 === 0) {
+                alert("You should have at least one item");
+            } else {
+                val1 = val1 - 1;
+                document.getElementById("count1").innerText = val1;
+                document.getElementById("price1").innerText = val1 * 50;
+                lastTotal();
+            }
+        }
+        function removeElement() {
+            document.getElementById("product1").style.display = "none";
+            document.getElementById("price1").innerText = 0;
+            document.getElementById("count1").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------
+        function addElement2() {
+            if (document.getElementById("product2").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product2").style.display = "block";
+            }
+        }
+
+        let val2 = 0;
+        document.getElementById("count2").innerText = val2;
+        function increaseVal2() {
+            val2 = val2 + 1;
+            document.getElementById("count2").innerText = val2;
+            document.getElementById("price2").innerText = val2 * 25;
+            lastTotal();
+        }
+        function decreaseVal2() {
+            if (val2 === 0) {
+                alert("You should have at least one item");
+            } else {
+                val2 = val2 - 1;
+                document.getElementById("count2").innerText = val2;
+                document.getElementById("price2").innerText = val2 * 25;
+                lastTotal();
+            }
+        }
+        function removeElement2() {
+            document.getElementById("product2").style.display = "none";
+            document.getElementById("price2").innerText = 0;
+            document.getElementById("count2").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------
+        function addElement3() {
+            if (document.getElementById("product3").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product3").style.display = "block";
+            }
+        }
+        let val3 = 0;
+        document.getElementById("count3").innerText = val3;
+
+        function increaseVal3() {
+            val3 = val3 + 1;
+            document.getElementById("count3").innerText = val3;
+            document.getElementById("price3").innerText = val3 * 28;
+            lastTotal();
+        }
+        function decreaseVal3() {
+            if (val3 === 0) {
+                alert("You should have at least one item");
+            } else {
+                val3 = val3 - 1;
+                document.getElementById("count3").innerText = val3;
+                document.getElementById("price3").innerText = val3 * 28;
+                lastTotal();
+            }
+        }
+
+        function removeElement3() {
+            document.getElementById("product3").style.display = "none";
+            document.getElementById("price3").innerText = 0;
+            document.getElementById("count3").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------
+        function addElement4() {
+            if (document.getElementById("product4").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product4").style.display = "block";
+            }
+        }
+        let val4 = 0;
+        document.getElementById("count4").innerText = val4;
+
+        function increaseval4() {
+            val4 = val4 + 1;
+            document.getElementById("count4").innerText = val4;
+            document.getElementById("price4").innerText = val4 * 10;
+            lastTotal();
+        }
+        function decreaseval4() {
+            if (val4 === 0) {
+                alert("You should have at least one item");
+            } else {
+                val4 = val4 - 1;
+                document.getElementById("count4").innerText = val4;
+                document.getElementById("price4").innerText = val4 * 10;
+                lastTotal();
+            }
+        }
+        function removeElement4() {
+            document.getElementById("product4").style.display = "none";
+            document.getElementById("price4").innerText = 0;
+            document.getElementById("count4").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------
+        function addElement5() {
+            if (document.getElementById("product5").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product5").style.display = "block";
+            }
+        }
+        let val5 = 0;
+        document.getElementById("count5").innerText = val5;
+
+        function increaseVal5() {
+            val5 = val5 + 1;
+            document.getElementById("count5").innerText = val5;
+            document.getElementById("price5").innerText = val5 * 55;
+            lastTotal();
+        }
+        function decreaseVal5() {
+            if (val5 === 0) {
+                alert("You should have at least one item");
+            } else {
+                val5 = val5 - 1;
+                document.getElementById("count5").innerText = val5;
+                document.getElementById("price5").innerText = val5 * 55;
+                lastTotal();
+            }
+        }
+        function removeElement5() {
+            document.getElementById("product5").style.display = "none";
+            document.getElementById("price5").innerText = 0;
+            document.getElementById("count5").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------
+        function addElement6() {
+            if (document.getElementById("product6").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product6").style.display = "block";
+            }
+        }
+        let val6 = 0;
+        document.getElementById("count6").innerText = val6;
+
+        function increaseVal6() {
+            val6 = val6 + 1;
+            document.getElementById("count6").innerText = val6;
+            document.getElementById("price6").innerText = val6 * 40;
+            lastTotal();
+        }
+        function decreaseVal6() {
+            if (val6 === 0) {
+                alert("You should have at least one item");
+            } else {
+                val6 = val6 - 1;
+                document.getElementById("count6").innerText = val6;
+                document.getElementById("price6").innerText = val6 * 40;
+            }
+        }
+        function removeElement6() {
+            document.getElementById("product6").style.display = "none";
+            document.getElementById("price6").innerText = 0;
+            document.getElementById("count6").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------
+        function addElement7() {
+            if (document.getElementById("product7").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product7").style.display = "block";
+            }
+        }
+        let val7 = 0;
+        document.getElementById("count7").innerText = val7;
+
+        function increaseVal7() {
+            val7 = val7 + 1;
+            document.getElementById("count7").innerText = val7;
+            document.getElementById("price7").innerText = val7 * 5;
+            lastTotal();
+        }
+        function decreaseVal7() {
+            if (val7 === 0) {
+                alert("You should have at least one item");
+            } else {
+                val7 = val7 - 1;
+                document.getElementById("count7").innerText = val7;
+                document.getElementById("price7").innerText = val7 * 5;
+                lastTotal();
+            }
+        }
+        function removeElement7() {
+            document.getElementById("product7").style.display = "none";
+            document.getElementById("price7").innerText = 0;
+            document.getElementById("count7").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------
+        function addElement8() {
+            if (document.getElementById("product8").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product8").style.display = "block";
+            }
+        }
+        let val8 = 0;
+        document.getElementById("count8").innerText = val8;
+
+        function increaseVal8() {
+            val8 = val8 + 1;
+            document.getElementById("count8").innerText = val8;
+            document.getElementById("price8").innerText = val8 * 7;
+            lastTotal();
+        }
+        function decreaseVal8() {
+            if (val8 === 0) {
+                alert("You should have at least one item");
+            } else {
+                val8 = val8 - 1;
+                document.getElementById("count8").innerText = val8;
+                document.getElementById("price8").innerText = val8 * 7;
+                lastTotal();
+            }
+        }
+        function removeElement8() {
+            document.getElementById("product8").style.display = "none";
+            document.getElementById("price8").innerText = 0;
+            document.getElementById("count8").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------
+        function addElement9() {
+            if (document.getElementById("product9").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product9").style.display = "block";
+            }
+        }
+        let val9 = 0;
+        document.getElementById("count9").innerText = val9;
+
+        function increaseVal9() {
+            val9 = val9 + 1;
+            document.getElementById("count9").innerText = val9;
+            document.getElementById("price9").innerText = val9 * 3;
+            lastTotal();
+        }
+        function decreaseVal9() {
+            if (val9 === 0) {
+                alert("You should have at least one item");
+            } else {
+                val9 = val9 - 1;
+                document.getElementById("count9").innerText = val9;
+                document.getElementById("price9").innerText = val9 * 3;
+                lastTotal();
+            }
+        }
+        function removeElement9() {
+            document.getElementById("product9").style.display = "none";
+            document.getElementById("price9").innerText = 0;
+            document.getElementById("count9").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------
+        function addElement10() {
+            if (document.getElementById("product10").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product10").style.display = "block";
+            }
+        }
+        let val10 = 0;
+        document.getElementById("count10").innerText = val10;
+
+        function increaseVal10() {
+            val10 = val10 + 1;
+            document.getElementById("count10").innerText = val10;
+            document.getElementById("price10").innerText = val10 * 10;
+            lastTotal();
+        }
+        function decreaseVal10() {
+            if (val10 === 0) {
+                alert("You should have at least one item");
+            } else {
+                val10 = val10 - 1;
+                document.getElementById("count10").innerText = val10;
+                document.getElementById("price10").innerText = val10 * 10;
+                lastTotal();
+            }
+        }
+        function removeElement10() {
+            document.getElementById("product10").style.display = "none";
+            document.getElementById("price10").innerText = 0;
+            document.getElementById("count10").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------
+        function addElement11() {
+            if (document.getElementById("product11").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product11").style.display = "block";
+            }
+        }
+        let val11 = 0;
+        document.getElementById("count11").innerText = val11;
+
+        function increaseVal11() {
+            val11 = val11 + 1;
+            document.getElementById("count11").innerText = val11;
+            document.getElementById("price11").innerText = val11 * 5;
+            lastTotal();
+        }
+        function decreaseVal11() {
+            if (val11 === 0) {
+                alert("You should have at least one item");
+            } else {
+                val11 = val11 - 1;
+                document.getElementById("count11").innerText = val11;
+                document.getElementById("price11").innerText = val11 * 5;
+                lastTotal();
+            }
+        }
+        function removeElement11() {
+            document.getElementById("product11").style.display = "none";
+            document.getElementById("price11").innerText = 0;
+            document.getElementById("count11").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------
+        function addElement12() {
+            if (document.getElementById("product12").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product12").style.display = "block";
+            }
+        }
+        let val12 = 0;
+        document.getElementById("count12").innerText = val12;
+
+        function increaseVal12() {
+            val12 = val12 + 1;
+            document.getElementById("count12").innerText = val12;
+            document.getElementById("price12").innerText = val12 * 5;
+            lastTotal();
+        }
+        function decreaseVal12() {
+            if (val12 === 0) {
+                alert("You should have at least one item");
+            } else {
+                val12 = val12 - 1;
+                document.getElementById("count12").innerText = val12;
+                document.getElementById("price12").innerText = val12 * 5;
+                lastTotal();
+            }
+        }
+        function removeElement12() {
+            document.getElementById("product12").style.display = "none";
+            document.getElementById("price12").innerText = 0;
+            document.getElementById("count12").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------        
+        function addElement13() {
+            if (document.getElementById("product13").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product13").style.display = "block";
+            }
+        }
+        let val13 = 0;
+        document.getElementById("count13").innerText = val13;
+
+        function increaseVal13() {
+            val13 = val13 + 1;
+            document.getElementById("count13").innerText = val13;
+            document.getElementById("price13").innerText = val13 * 12;
+            lastTotal();
+        }
+        function decreaseVal13() {
+            if (val13 === 0) {
+                alert("You should have at least one item");
+            } else {
+                val13 = val13 - 1;
+                document.getElementById("count13").innerText = val13;
+                document.getElementById("price13").innerText = val13 * 12;
+                lastTotal();
+            }
+        }
+        function removeElement13() {
+            document.getElementById("product13").style.display = "none";
+            document.getElementById("price13").innerText = 0;
+            document.getElementById("count13").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------       
+        function addElement14() {
+            if (document.getElementById("product14").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product14").style.display = "block";
+            }
+        }
+        let val14 = 0;
+        document.getElementById("count14").innerText = val14;
+
+        function increaseVal14() {
+            val14 = val14 + 1;
+            document.getElementById("count14").innerText = val14;
+            document.getElementById("price14").innerText = val14 * 9;
+            lastTotal();
+        }
+        function decreaseVal14() {
+            if (val14 === 0) {
+
+            } else {
+                val14 = val14 - 1;
+                document.getElementById("count14").innerText = val14;
+                document.getElementById("price14").innerText = val14 * 9;
+                lastTotal();
+            }
+        }
+        function removeElement14() {
+            document.getElementById("product14").style.display = "none";
+            document.getElementById("price14").innerText = 0;
+            document.getElementById("count14").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------
+        function addElement15() {
+            if (document.getElementById("product15").style.display === "block") {
+                alert("The product is already in the cart");
+            } else {
+                document.getElementById("product15").style.display = "block";
+            }
+        }
+        let val15 = 0;
+        document.getElementById("count15").innerText = val15;
+
+        function increaseVal15() {
+            val15 = val15 + 1;
+            document.getElementById("count15").innerText = val15;
+            document.getElementById("price15").innerText = val15 * 15;
+            lastTotal();
+        }
+        function decreaseVal15() {
+            if (val15 === 0) {
+                alert("You should have at least one item");
+
+            } else {
+                val15 = val15 - 1;
+                document.getElementById("count15").innerText = val15;
+                document.getElementById("price15").innerText = val15 * 15;
+                lastTotal();
+            }
+        }
+        function removeElement15() {
+            document.getElementById("product15").style.display = "none";
+            document.getElementById("price15").innerText = 0;
+            document.getElementById("count15").innerText = 0;
+        }
+        //--------------------------------------------------------------------------------------------------        
+
+        function lastTotal() {
+            let totalNum1 = document.getElementById("count1").innerText;
+            let totalNum2 = document.getElementById("count2").innerText;
+            let totalNum3 = document.getElementById("count3").innerText;
+            let totalNum4 = document.getElementById("count4").innerText;
+            let totalNum5 = document.getElementById("count5").innerText;
+            let totalNum6 = document.getElementById("count6").innerText;
+            let totalNum7 = document.getElementById("count7").innerText;
+            let totalNum8 = document.getElementById("count8").innerText;
+            let totalNum9 = document.getElementById("count9").innerText;
+            let totalNum10 = document.getElementById("count10").innerText;
+            let totalNum11 = document.getElementById("count11").innerText;
+            let totalNum12 = document.getElementById("count12").innerText;
+            let totalNum13 = document.getElementById("count13").innerText;
+            let totalNum14 = document.getElementById("count14").innerText;
+            let totalNum15 = document.getElementById("count15").innerText;
+
+            let totalNumber = 0;
+            totalNumber = parseInt(totalNum1) + parseInt(totalNum2) + parseInt(totalNum3) + parseInt(totalNum4) + parseInt(totalNum5) + parseInt(totalNum6) + parseInt(totalNum7) + parseInt(totalNum8) + parseInt(totalNum9) + parseInt(totalNum10) + parseInt(totalNum11) + parseInt(totalNum12) + parseInt(totalNum13) + parseInt(totalNum14) + parseInt(totalNum15);
+            document.getElementById("totalNo").innerText = totalNumber;
+            document.getElementById("NumSum").innerText = totalNumber;
+
+            let finalTotal1 = document.getElementById("price1").innerText;
+            let finalTotal2 = document.getElementById("price2").innerText;
+            let finalTotal3 = document.getElementById("price3").innerText;
+            let finalTotal4 = document.getElementById("price4").innerText;
+            let finalTotal5 = document.getElementById("price5").innerText;
+            let finalTotal6 = document.getElementById("price6").innerText;
+            let finalTotal7 = document.getElementById("price7").innerText;
+            let finalTotal8 = document.getElementById("price8").innerText;
+            let finalTotal9 = document.getElementById("price9").innerText;
+            let finalTotal10 = document.getElementById("price10").innerText;
+            let finalTotal11 = document.getElementById("price11").innerText;
+            let finalTotal12 = document.getElementById("price12").innerText;
+            let finalTotal13 = document.getElementById("price13").innerText;
+            let finalTotal14 = document.getElementById("price14").innerText;
+            let finalTotal15 = document.getElementById("price15").innerText;
+
+            let total = 0;
+            total = parseInt(finalTotal1) + parseInt(finalTotal2) + parseInt(finalTotal3) + parseInt(finalTotal4) + parseInt(finalTotal5) + parseInt(finalTotal6) + parseInt(finalTotal7) + parseInt(finalTotal8) + parseInt(finalTotal9) + parseInt(finalTotal10) + parseInt(finalTotal11) + parseInt(finalTotal12) + parseInt(finalTotal13) + parseInt(finalTotal14) + parseInt(finalTotal15);
+            if (total != 0) {
+                document.getElementById("buyButton").style.display = "block";
+            } else {
+                document.getElementById("buyButton").style.display = "none";
+            }
+            document.getElementById("totalVal").innerText = total;
+            document.getElementById("totalSum").innerText = total;
+        }
+
+        function displayBill() {
+            var elemen = document.getElementById("paymentBill");
+            elemen.style.display = "flex";
+        }
+        function closeBill() {
+            var elemen = document.getElementById("paymentBill");
+            elemen.style.display = "none";
+        } 
+    </script>
+
+</body>
+
+</html>

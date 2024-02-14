@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="S2_StyleSheet.css">
+
+        <title>Home Page</title>
+    </head>
+
+    <body id="mainPage">
+        <!-- Creating the navigation bar -->
+        <header>
+            <div class="naviBar">  
+                <img src="S2_Images/Logo.png" alt="Logo" id="logo" onclick='window.location.href="S2_HomePage.html"'>
+                <a id="home" href="S2_HomePage.html">Home</a>
+                <a id="gallery" href="S4_Gallery.html">Gallery</a>
+                <a id="comment" href="S2_CommentsForm.html">Comment</a> 
+                <a id="shop" href="S1_buyProducts.html">Shop</a>
+                <a id="quiz" href="S3_Quiz.html">Quiz</a>
+                <a id="siteMap" href="S4_Sitemap.html">Site Map</a>
+                <a id="about" href="S3_about_us.html">About us</a>
+            </div>
+        </header>
+
+        <div id="welcomeTxt">Welcome to Sri Lanka</div>
+
+        <!-- Creating container and placing images and contents to show extra content pages -->
+        <div class="container">
+			<div class="containerCenter"> 
+                <img src="S2_Images/Train.png" alt="Train Image"> 
+                <div class="imgContent">
+                    <p>Why visit Sri Lanka?</p>
+                    <a onclick='window.location.href="S2_VisitSriLanka.html"'> Read more </a>
+                </div>
+            </div>
+            
+			<div class="containerCenter"> 
+                <img src="S2_Images/Kandy.png" alt="Kandy Image"> 
+                <div class="imgContent">
+                    <p>Top 10 visited places</p>
+                    <a onclick='window.location.href="S4_Places.html"'> Read more </a>
+                </div>
+            </div>
+
+            <div class="containerCenter"> 
+                <img src="S2_Images/Hotel.jpg" alt="Hotel image"> 
+                <div class="imgContent">
+                    <p>Hotels to book a stay</p>
+                    <a onclick='window.location.href="S3_hotel.html"'> Find a stay </a>
+                </div>
+            </div>
+
+            <div class="containerCenter"> 
+                <img src="S2_Images/History.jpg" alt="Historical siteMap"> 
+                <div class="imgContent">
+                    <p>History of Sri Lanka</p>
+                    <a onclick='window.location.href="S1_HistoryofSriLanka.html"'> Read more </a>
+                </div>
+            </div>
+		</div>
+
+        <!-- Creating the button to go to the top on click -->
+        <div class="upGo">
+            <input type="button" value="Go up" onclick='window.location.href="S2_HomePage.html"'>
+        </div>
+        
+        <hr>
+
+        <!-- Creating the footer -->
+        <footer id="aboutUs">
+            <p> Author: Hasmithan Kumararaja<br>
+            <a href="S2_PageEditor.html"> Page Developer Details </a> 
+            </p>
+        </footer>
+        
+        <!-- JavaScript to show the active page -->
+        <script>
+            document.getElementById("home").style.backgroundColor="#95df1d";
+            document.getElementById("home").style.color="#054100";
+            document.getElementById("home").style.border="none";
+        </script>
+    </body>
+</html>

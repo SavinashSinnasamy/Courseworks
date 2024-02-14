@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Developer_Details</title>
+	<style>
+		body{background-color: pink;
+			font-family: courier, monospace;
+			text-align: center;
+			margin: 0;}
+			
+		#Developer{background-color:white;
+				height: 115px;	
+				font-weight: bolder;
+				/*border-style: solid;*/}
+               
+    		/* top button */
+
+        #topbtn{
+            height:fit-content;
+            width: fit-content;
+            position: absolute;
+            right: 5%;
+            bottom: 5%;
+            margin: 20px;
+            border-radius: 30%;
+            border: none;
+            font-weight: bold;
+            transition: 0.1s all;
+            position: fixed;
+        }
+        #topbtn:focus{
+            outline: none;
+        }
+        #topbtn:hover{
+            background-color: transparent;
+            color: white;
+            transform: scale(1.3);
+        }
+	</style>
+</head>
+
+<body>
+	
+	<h1 id="title">Page Editor</h1>
+	<div id="Developer">
+		<br>
+	    <hr>Name: Hafeelul Ilahi Ahamed Haseef<br>
+	       Role: Student 3<br>
+	       I contributed to the following pages.<hr>
+	
+	</div>
+
+	<a style="color:black;" href="#Additional_content">Jump to bottom</a>
+
+	<h3>About us</h3>
+	<p><b>Created an web contains Images of members <br>
+        with hover effect<br>
+        using HTML and CSS.<br>
+	    </b>
+	</p>
+	   
+	<a style="color:black;" href="S3_about_us.html">Link to about_us</a>
+
+	<h3>Quiz</h3>
+	<p><b>Created a quiz <br>
+	      Usin HTML, CSS and Java Script.<br> Used html for contents.<br>
+          Java Script used for <br>
+          evaluating Answers and set timer and used event listeners.
+        </b>
+        
+    </p>
+    		  
+	<a style="color:black;" href="S3_Quiz.html">Link to Quiz</a>
+	
+	<h3>Page Editor</h3>
+	<p><b>Created a page editor webpage using only HTML and CSS.</b></p>
+	<a style="color:black;" href="S3_Page_Editor.html">Link to Page Editor</a>
+
+    <h3 id="Additional_content">Additional Content</h3>
+	<p><b>Created a webpage that provideds links to some hotels.<br>
+	      The webpage was created using only HTML and CSS.</b></p>
+	<a style="color:black;" href="S3_hotel.html">Link to Additional Content</a>	  
+	
+	<a href="#title"><p id="topbtn">Top</p></a>
+</body>
+
+</html>

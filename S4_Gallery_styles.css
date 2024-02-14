@@ -1,0 +1,176 @@
+body{margin-left:0px;
+	 background: #f7e660;
+	 transition: background-color 1s;
+	 overflow-x: hidden;/*This line addresses a bug in the program. The bug being the additional page width*/}
+		 
+
+.button-container{position: relative;/*This block positions the buttons in the same line as the heading*/
+                  top: -60px;
+                  right: -1338px;}
+
+.color-button{width: 18px;
+              height: 18px;
+              border: 1;
+              margin: 2.5px;}					
+				
+.container{width: 100%;
+           height: 38%;
+           display: flex;
+           align-items: relative;
+           justify-content: center;
+           text-align: center;}
+
+.gallery{display: flex;
+         align-items: center;
+         justify-content: center;}
+		   
+/*-------------------------------------------------------------------------------------------------------------------------Image boxes containing FIRST ROW of images.*/		   
+			 
+.img-box{width: 350px;
+         height: 210px;
+         margin: 5px;
+         border-radius: 15px;
+         background-size: cover;
+         background-position:center;
+         position: relative;
+         transition: width 0.5s, height 0.5s;}
+
+.img-box:nth-child(1){background: url("S4_Images/Colombo.jpg");
+                      background-size: cover;
+                      background-position:center;}
+
+.img-box:nth-child(2){background: url("S4_Images/Diyathalawa_Badulla.jpg");
+                      background-size: cover;
+                      background-position:center;}
+
+.img-box:nth-child(3){background: url("S4_Images/Sigiriya.png");
+                      background-size: cover;
+                      background-position:center;}
+
+.img-box:nth-child(4){background: url("S4_Images/Ella.jpg");
+                      background-size: cover;
+                      background-position:center;}
+						  
+
+.img-box h4{color: #ffffff;
+            position: absolute;
+            bottom: 0;
+            left: 5px;
+            right: 5px;
+            opacity: 0;
+            transition: top 0.5s, opacity 0.5s;}			
+				
+.img-box:hover{width: 400px;
+               height: 260px;}
+				   
+.img-box:hover h4{opacity: 1;
+                  bottom: 25px;}
+					  
+/*-------------------------------------------------------------------------------------------------------------------------Image boxes containing SECOND ROW of images.*/
+
+.img-box_2{width: 350px;                                           
+           height: 210px;
+           margin: 5px;
+           border-radius: 15px;
+           background-size: cover;
+           background-position:center;
+           position: relative;
+           transition: width 0.5s, height 0.5s;}
+
+.img-box_2:nth-child(1){background: url("S4_Images/Kandy.jpg");
+                        background-size: cover;
+                        background-position:center;}
+
+.img-box_2:nth-child(2){background: url("S4_Images/Mirissa.jpg");
+                        background-size: cover;
+                        background-position:center;}
+
+.img-box_2:nth-child(3){background: url("S4_Images/Adams_peak.jpg");
+                        background-size: cover;
+                        background-position:center;}
+
+.img-box_2:nth-child(4){background: url("S4_Images/Riverstone_matale.jpg");
+                        background-size: cover;
+                        background-position:center;}
+
+						  
+
+.img-box_2 h4{color: #ffffff;
+              position: absolute;
+              bottom: 0;
+              left: 5px;
+              right: 5px;
+              opacity: 0;
+              transition: top 0.5s, opacity 0.5s;}
+				
+.img-box_2:hover{width: 400px;
+                 height: 260px;}
+			   
+.img-box_2:hover h4{opacity: 1;
+                    bottom: 25px;}
+						
+/*-------------------------------------------------------------------------------------------------------------------------Image boxes containing THIRD ROW of images.*/
+	
+.img-box_3{width: 350px;
+           height: 210px;
+           margin: 5px;
+           border-radius: 15px;
+           background-size: cover;
+           background-position:center;
+           position: relative;
+           transition: width 0.5s, height 0.5s;}
+
+.img-box_3:nth-child(1){background: url("S4_Images/Horton_plains.jpg");
+                        background-size: cover;
+                        background-position:center;}
+
+.img-box_3:nth-child(2){background: url("S4_Images/Ruwanwelisaya_Anuradhapura.jpg");
+                        background-size: cover;
+                        background-position:center;}
+
+.img-box_3:nth-child(3){background: url("S4_Images/Sinharaja.jpg");
+                        background-size: cover;
+                        background-position:center;}
+
+.img-box_3:nth-child(4){background: url("S4_Images/Yala.jpg");
+                        background-size: cover;
+                        background-position:center;}
+
+						  
+
+.img-box_3 h4{color: #ffffff;
+              position: absolute;
+              bottom: 0;
+              left: 5px;
+              right: 5px;
+              opacity: 0;
+              transition: top 0.5s, opacity 0.5s;}
+				
+.img-box_3:hover{width: 400px;
+                 height: 260px;}
+				   
+.img-box_3:hover h4{opacity: 1;
+                    bottom: 25px;}
+
+hr.tapered{border: 0;/*---------------------------------------------------------------------------------------------------This block creates a tapering horizontal rule with a fading effext.*/
+           height: 1.5px;
+           background-image: linear-gradient(to right, rgba(149, 223, 29, 0), rgba(149, 223, 29, 0.75), rgba(149, 223, 29, 0));
+           width: 93%;}	
+	   
+hr.flared{overflow: visible;/*-------This creates an upturned flared horizontal rule*/
+          height: 30px;
+          border-style: solid;
+          border-color: #95df1d;
+          border-width: 1px 0 0 0;
+          border-radius: 20px;
+          margin-left:35px;
+          width: 95%;}
+				  
+hr.flared:before {display: block;/*--------This creates an inverted flared horizontal rule of the above uptured horizontal rule.*/
+                  content: "";
+                  height: 30px;
+                  margin-top: -31px;
+                  border-style: solid;
+                  border-color: #95df1d;
+                  border-width: 0 0 1px 0;
+                  border-radius: 20px;}

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hotel Website Links</title> 
+        <style>
+
+            /*creat background image*/
+            body{
+                background-image: linear-gradient(
+                rgba(0,0,0,0.50),
+                rgba(0,0,0,0.50)),
+                url(S3_Images/Student3_Mountains.jpg);
+                margin:0; /* To make no space between bar and page */
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment:fixed;
+                z-index: -1; /* sending back */
+            }
+
+            #logo{
+            overflow:hidden;
+            position:absolute;
+
+            top: 0px; 
+            left:20px;
+            height:70px;
+
+            cursor: pointer;
+            }
+
+            .naviBar{
+                overflow: hidden;
+                position: fixed; /* Set the navbar to fixed position */
+                display: inline;
+
+                top: 0; /* Position the navbar at the top of the page */
+                width: 98%; /* Full width */
+                
+                border-bottom: 2px solid #95df1d;
+
+                background-color:transparent;
+                backdrop-filter: blur(10px);
+
+                text-align: right;
+                padding: 18px;
+                
+                z-index: 999;
+            }
+
+            .naviBar a{
+                color: white;
+                text-decoration: none;
+
+                font-size: 18px;
+                padding: 12px;
+                border-radius: 10px;
+            }
+
+            .naviBar a:hover{
+                color:#95df1d;
+                border-bottom: 2px solid;
+                border-color:#95df1d;
+                cursor: pointer;
+            }
+                /*styling and positionining the containers*/
+
+                .overview{
+                    position: relative;
+                    border: 6px solid green;
+                    border-radius: 16px;
+                    border-collapse: collapse;
+                    width: 800px;
+                    height: fit-content;
+                    background-color:greenyellow;              
+                    color: rgb(100, 5, 216);
+                    top:200px;
+                    left: 50%;
+                    transform: translate(-50%, -35%);
+                }
+
+                .cinnamon{
+                    position: relative;
+                    border: 6px solid green;
+                    border-radius: 16px;
+                    border-collapse: collapse;
+                    width: 800px;
+                    height: 170px;
+                    background-color:rgb(217, 237, 222);
+                    color: rgb(63, 19, 240);
+                    top: 300px;
+                    left: 50%;
+                    transform: translate(-50%, -60%);
+                    text-align: justify;
+                }
+
+                .uga{
+                    position: relative;
+                    border: 6px solid green;
+                    border-radius: 16px;
+                    border-collapse: collapse;
+                    width: 800px;
+                    height: 170px;
+                    background-color:rgb(217, 237, 222);
+                    color: rgb(63, 19, 240);
+                    top: 475px;
+                    left: 50%;
+                    transform: translate(-50%, -60%);
+                    text-align: justify;
+                }
+
+                .jetwing{
+                    position: relative;
+                    border: 6px solid green;
+                    border-radius: 16px;
+                    border-collapse: collapse;
+                    width: 800px;
+                    height: 170px;
+                    background-color:rgb(217, 237, 222);
+                    color: rgb(63, 19, 240);
+                    top : 650px;
+                    left: 50%;
+                    transform: translate(-50%, -60%);
+                    text-align: justify;
+                }
+
+                .anandaya{
+                    position: relative;
+                    border: 6px solid green;
+                    border-radius: 16px;
+                    border-collapse: collapse;
+                    width: 800px;
+                    height: 150px;
+                    background-color:rgb(217, 237, 222);
+                    color: rgb(63, 19, 240);
+                    top:805px;
+                    left: 50%;
+                    transform: translate(-50%, -60%);
+                    text-align: justify;
+                }
+
+                .amaya{
+                    position: relative;
+                    border: 6px solid green;
+                    border-radius: 16px;
+                    border-collapse: collapse;
+                    width: 800px;
+                    height: 170px;
+                    background-color:rgb(217, 237, 222);
+                    color: rgb(63, 19, 240);
+                    top:960px;
+                    left: 50%;
+                    transform: translate(-50%, -60%);
+                    text-align: justify;
+                }
+
+                .araliya{
+                    position: relative;
+                    border: 6px solid green;
+                    border-radius: 16px;
+                    border-collapse: collapse;
+                    width: 800px;
+                    height: 170px;
+                    background-color:rgb(217, 237, 222);
+                    color: rgb(63, 19, 240);
+                    top:1135px;
+                    left: 50%;
+                    transform: translate(-50%, -90%);
+                    text-align: justify;
+                }
+
+                .whitespace{
+                    position: relative;
+                    border: 6px; 
+                    border-collapse: collapse;
+                    height: 80px;
+                    background-color:transparent;
+                    color: transparent;
+                    top:1310px;
+                    left: 50%;
+                    transform: translate(-50%, -90%);  
+                }
+
+            
+
+                /* fit images in the container */
+                .cinnamon_image,.uga_image,.jetwing_image,.anandaya_image,.amaya_image,.araliya_image{
+                    position: absolute;
+                    margin-left:30px;
+                    max-width: 250px;
+                    max-height: 170px;
+                    opacity: 1;
+                    transition: opacity 0.5s ease;
+                }
+
+
+                                /* positioning the  pointer container*/
+                .pointerContainer{
+                    position: fixed;
+                    bottom: 0px;
+                    background-color: black;
+                    height: 30px;
+                    width: 100%;
+                    z-index: 999;
+                    padding: 10px 0px 10px 0px;
+                }
+
+                /* list item positioning */
+                .pointer li{
+                    float: right;
+                    padding: 10px 15px 10px 20px;
+                    text-align: center;
+                }
+
+                /*anchor displaying*/
+                .pointer li a{
+                    text-decoration:none;
+                    color: white;
+                    padding: 10px 30px 10px 30px;
+                    transition: 0.2s all ease-in;
+                    font-size: 18px;
+                    border-radius: 10px;
+                }
+                .pointer li a span{
+                    color: rgb(117, 141, 250);
+                    font-weight:bolder;
+                    transition: 0.2s all ease-in;
+                }
+                /*positioning the unordered list nav*/
+                .pointer{
+                    list-style: none;
+                    margin: 0px;
+                }
+
+                .pointer li a:link{
+                    color: red;
+                    background: black;
+                }
+
+                /* hover effect for the list names */
+                .pointer li a:hover{
+                    color: black;
+                    background: white;
+                }
+                /* hover effect for the list names span */
+                .pointer li:hover span{
+                    color:rgb(223, 168, 0);
+                }
+
+
+				
+			    
+			
+
+           /* top button */
+
+            #topbtn{
+                height: fit-content;
+                width: fit-content;
+                position: absolute;
+                right: 3%;
+                bottom: 13%;
+                margin: 15px;
+                background-color: rgb(223, 246, 246);
+                border-radius: 20%;
+                border: none;
+                font-weight: bold;
+                transition: 0.1s all;
+                position: fixed;
+            }
+            #topbtn:focus{
+                outline: none;
+            }
+            #topbtn:hover{
+                background-color: transparent;
+                color: rgb(9, 122, 243);
+                transform: scale(1.3);
+            }
+
+                       /* bottom button */
+
+            #bottombtn{
+                height: fit-content;
+                width: fit-content;
+                position: absolute;
+                right: 3%;
+                bottom: 7%;
+                margin: 15px;
+                background-color: #effcfc;
+                border-radius: 40%;
+                border: none;
+                font-weight: bold;
+                transition: 0.1s all;
+                position: fixed;
+            }
+            #bottombtn:focus{
+                outline: none;
+            }
+            #bottombtn:hover{
+                background-color: transparent;
+                color: rgb(15, 115, 228);
+                transform: scale(1.3);
+            }
+
+                        /*  developer page container */
+
+            .dev_page{
+                padding: 13px;
+                margin: 40px 0px 0px 0px;
+                font-size: 17px;
+                width: fit-content;
+                height: fit-content;
+                border-radius: 10px;
+                background-color: #dfdfdf;
+                transition: 0.2s all ease-in;
+                position: absolute;
+                bottom: 7%;
+                left: 0%;
+                position: fixed;
+            }
+            .dev_page:hover{
+                transform: translateY(-15px);
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="naviBar">  
+                <img src="S3_Images/Logo.jpg" alt="Logo" id="logo" onclick='window.location.href="S2_HomePage.html"'>
+                <a id="home" href="S2_HomePage.html">Home</a>
+                <a id="gallery" href="S4_Gallery.html">Gallery</a>
+                <a id="comment" href="S2_CommentsForm.html">Comment</a> 
+                <a id="shop" href="S1_buyProducts.html">Shop</a>
+                <a id="quiz" href="S3_Quiz.html">Quiz</a>
+                <a id="siteMap" href="S4_Sitemap.html">Site Map</a>
+                <a id="hotel" href="S3_hotel.html">Hotels </a>
+                <a id="about" href="S3_about_us.html">About us</a>
+            </div>
+        </header>
+
+        <div class="overview" id="overview">
+            <h1>Links to 5 hotels with branches</h1>
+            <br>
+            <ol>
+                <li>Cinnamon Grand Hotel</li>
+                <li>Uga</li>
+                <li>JetWing Hotals</li>
+                <li>Anandaya Resorts & Spa</li>
+                <li>Amaya Resort & Spa</li>
+                <li>Araliya Resorts & Spa</li>
+            </ol>
+        </div>
+
+        <div class="cinnamon" id="cinnamon">
+            <img src="S3_Images/Student3_Cinnamon.png" alt="cinnamonhotel" class="cinnamon_image"
+            style="float:left">
+            <div class="discription">
+                <h1 class="text" style="text-align: right;">Cinnamon Grand Hotel</h1>
+                <p class="text" style="text-align: right;">To visit Official Website</p>
+                <a class="text" href="https://www.cinnamonhotels.com/cinnamongrandcolombo"><p style="text-align: right;">click here</p></a>
+
+            </div>
+        </div>
+
+        <div class="uga" id="uga">
+            <img src="S3_Images/Student3_Uga.jpg" alt="ugahotel" class="uga_image"
+            style="float:left">
+            <div class="discription">
+                <h1 style="text-align: right;">Uga Hotel</h1>
+                <p style="text-align: right;">To visit Official Website</p>
+                <a href="https://www.ugaescapes.com/"><p style="text-align: right;">click here</p></a>
+
+            </div>
+        </div>
+
+        <div class="jetwing" id="jetwing">
+            <img src="S3_Images/Student3_jetwing.jpg" alt="jetwinghotel" class="jetwing_image"
+            style="float:left">
+            <div class="discription">
+                <h1 style="text-align: right;">JetWing Hotel</h1>
+                <p style="text-align: right;">To visit Official Website</p>
+                <a href="https://www.jetwinghotels.com/#gref"><p style="text-align: right;">click here</p></a>
+
+            </div>
+        </div>
+
+        <div class="anandaya" id="anandaya">
+            <img src="S3_Images/Student3_Anandaya.jpg" alt="anandayahotel" class="anandaya_image"
+            style="float:left">
+            <div class="discription">
+                <h1 style="text-align: right;">Anandaya Resorts & Spa</h1>
+                <p style="text-align: right;">To visit Official Website</p>
+                <a href="https://www.anantaya.lk/"><p style="text-align: right;">click here</p></a>
+
+            </div>
+        </div>
+
+        <div class="amaya" id="amaya">
+            <img src="S3_Images/Student3_Amaya.jpg" alt="amayahotel" class="amaya_image"
+            style="float:left">
+            <div class="discription">
+                <h1 style="text-align: right;">Amaya Resorts & Spa</h1>
+                <p style="text-align: right;">To visit Official Website</p>
+                <a href="https://www.amayaresorts.com/"><p style="text-align: right;">click here</p></a>
+
+            </div>
+        </div>
+
+        <div class="araliya" id="araliya">
+            <img src="S3_Images/Student3_Araliya.jpg" alt="araliya" class="araliya_image"
+            style="float:left">
+            <div class="discription">
+                <h1 style="text-align: right;">Araliya Resorts & Spa</h1>
+                <p style="text-align: right;">To visit Official Website</p>
+                <a href="https://www.araliyaresorts.com/"><p style="text-align: right;">click here</p></a>
+
+            </div>
+        </div>
+
+        
+        <div class="whitespace" id="whitespace">
+        </div>
+
+        <a href="#overview"><p id="topbtn">TOP</p></a>
+        <a href="#araliya"><p id="bottombtn">Bottom</p></a>
+
+        <!--<div id = "pointer">
+        
+        
+            <ul>
+                <li> <a href = "#cinnamon">Cinnamon</a></li>
+                <li> <a href = "#uga">Ugak</a></li>
+                <li> <a href = "#jetwing">jetwing</a></li>
+                <li> <a href = "#anandaya">Anandaya</a></li>
+                <li> <a href = "#amaya">Amaya</a></li>
+                <li> <a href = "#araliya">Araliya</a></li>
+            </ul>
+            
+        </div>-->
+
+                <!--  developer page anchor  -->
+
+        <a class="dev_page" href="S3_Page_Editor.html">Developer Page</a>
+
+        <footer class="pointerContainer">
+           
+            <ul class="pointer">
+                <li><a href="#cinnamon"><span>C</span>innamon</a></li>
+                <li><a href="#uga"><span>U</span>ga</a></li>
+                <li><a href="#jetwing"><span>J</span>etwing</a></li>
+                <li><a href="#anandaya"><span>A</span>nandaya</a></li>
+                <li><a href="#amaya"><span>A</span>maya</a></li>
+                <li><a href="#araliya"><span>A</span>raliya</a></li>
+            </ul>
+        </footer>
+
+        <script>        
+            document.getElementById("hotel").style.backgroundColor="#95df1d";
+            document.getElementById("hotel").style.color="#054100";
+            document.getElementById("hotel").style.border="none";
+          </script>
+        
+     </body>
+</html>

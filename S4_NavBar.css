@@ -1,0 +1,100 @@
+#logo{overflow:hidden;
+      position:absolute;
+      top: 0px; 
+      left:20px;
+      height:70px;
+	  cursor: pointer;}
+
+.naviBar{
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    display: inline;
+
+    top: 0; /* Position the navbar at the top of the page */
+    width: 98%; /* Full width */
+    
+    border-bottom: 2px solid #95df1d;
+
+    background-color:transparent;
+	backdrop-filter: blur(10px);
+
+    text-align: right;
+    padding: 18px;
+    
+    z-index: 999;
+}
+
+.naviBar a{
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.naviBar a:hover{
+    color:#95df1d;
+    border-bottom: 2px solid;
+    border-color:#95df1d;
+    cursor: pointer;
+}
+
+.upGo {
+    text-align: right;
+    margin-right: 2%;
+}
+
+.upGo input{
+    background-color: transparent;
+	backdrop-filter: blur(5px);
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color:#95df1d;
+
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #95df1d;
+}
+
+.upGo input:hover{
+    color: white;
+    background-color: #95df1d;
+}
+
+#aboutUs{
+    color: white;
+    font-size: 16px;
+    margin-left: 2%;
+}
+
+#aboutUs a:link{
+    color: white;
+}
+
+#aboutUs a:hover{
+    color: #95df1d;
+}
+
+#aboutUs a:visited{
+    color: white;
+}
+.aboutUs{
+    color: white;
+    font-size: 16px;
+    margin-left: 2%;
+}
+
+.aboutUs a:link{
+    color: white;
+}
+
+.aboutUs a:hover{
+    color: #95df1d;
+}
+
+.aboutUs a:visited{
+    color: white;
+}
