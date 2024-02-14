@@ -1,0 +1,63 @@
+
+X
+java:S6208"CMerge the previous cases into this one using comma-separated label.(ößìO
+Y
+java:S6208+"CMerge the previous cases into this one using comma-separated label.(âÃ å
+Y
+java:S6208;"CMerge the previous cases into this one using comma-separated label.(Â¯†Œ
+Y
+java:S6208y"CMerge the previous cases into this one using comma-separated label.(áÒß±
+_
+java:S6208¾"CMerge the previous cases into this one using comma-separated label.(º½¢Àùÿÿÿÿ
+Z
+java:S6208ƒ"CMerge the previous cases into this one using comma-separated label.(Ú¢Îî
+_
+java:S6208‰"CMerge the previous cases into this one using comma-separated label.(¶öé¿ÿÿÿÿÿ
+_
+java:S6208Ž"CMerge the previous cases into this one using comma-separated label.(Ýõ ìþÿÿÿÿ
+Z
+java:S6208“"CMerge the previous cases into this one using comma-separated label.(£áãÌ
+_
+java:S6208˜"CMerge the previous cases into this one using comma-separated label.(Ï•ä¯ýÿÿÿÿ
+Z
+java:S6208œ"CMerge the previous cases into this one using comma-separated label.(¹µÈË
+Z
+java:S6208°"CMerge the previous cases into this one using comma-separated label.(”ž­Û
+Z
+java:S6208´"CMerge the previous cases into this one using comma-separated label.(„‰ó÷
+ƒ
+java:S1192Œ"gDefine a constant instead of duplicating this literal "Invalid input !!
+Enter desired number
+" 9 times.(ÑëÕ„øÿÿÿÿ
+s	java:S135`"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆžÿÿÿÿÿ
+t	java:S135®"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆžÿÿÿÿÿ
+t	java:S135ò"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆžÿÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+n
+java:S3776"SRefactor this method to reduce its Cognitive Complexity from 262 to the 15 allowed.(ˆÅ§ôÿÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ˆ®œÿúÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(ñàþ¤ûÿÿÿÿ
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(ñàþ¤ûÿÿÿÿ
+D
+java:S1940D")Use the opposite operator ("!=") instead.(¾ ¿±ùÿÿÿÿ
+?
+java:S1940ƒ")Use the opposite operator ("!=") instead.(È×š.
+T	java:S106„"9Replace this use of System.out or System.err by a logger.(áÜš®þÿÿÿÿ
+?
+java:S1940‘")Use the opposite operator ("!=") instead.(È×š.
+O	java:S106’"9Replace this use of System.out or System.err by a logger.(ûµµÈ
+?
+java:S1940Ÿ")Use the opposite operator ("!=") instead.(È×š.
+O	java:S106 "9Replace this use of System.out or System.err by a logger.(ûµµÈ
+?
+java:S1940Ç")Use the opposite operator ("!=") instead.(È×š.
+T	java:S106È"9Replace this use of System.out or System.err by a logger.(ÂÉøúÿÿÿÿ
+?
+java:S1940Õ")Use the opposite operator ("!=") instead.(È×š.
+O	java:S106Ö"9Replace this use of System.out or System.err by a logger.(ûµµÈ
+?
+java:S1940ã")Use the opposite operator ("!=") instead.(È×š.
+O	java:S106ä"9Replace this use of System.out or System.err by a logger.(ûµµÈ
+â
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 301 to 64, Complexity from 98 to 14, Nesting Level from 9 to 2, Number of Variables from 37 to 6.(ˆÅ§ôÿÿÿÿÿ

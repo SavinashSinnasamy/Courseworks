@@ -1,0 +1,765 @@
+/*Creating background image design for Intro page*/
+body#introPage{
+    overflow: hidden;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.50),
+        rgba(0,0,0,0.50)),
+        url("S2_Images/Forest.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+	background-attachment: fixed;
+}
+
+/* Creating a box with blur effect to contain the content*/
+#backgroundBlur{
+    position: fixed;
+
+    height: 400px;
+    width: 400px;
+
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 25px;
+    border: 3px solid;
+    border-color:#3cab04;
+
+    background-color:transparent;
+	backdrop-filter: blur(5px);
+}
+
+/* CSS for the contents within the container to place it on the center */
+#introContent{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    text-align: center;
+}
+
+#introContent p{
+    font-size: 50px;
+    font-family:'Ysabeau SC';
+    color: white;
+}
+
+/* To disign the button */
+#explore{
+    position: relative;
+    top:5px;
+	font-size: 25px;
+    text-align: center;
+
+	padding: 8px 25px;
+	border-radius: 100px;
+    border-color:white;
+	background: transparent;
+
+	transition: .1s all ease;
+	cursor:default;
+    color: white;
+    cursor: pointer;
+}
+
+/* To give a hover effect to the button */
+#explore:hover{
+    color: white;
+	transform:scale(1.15);
+	background-color: #95df1d;
+    border-color:#95df1d;
+
+}
+
+/* -----------------For the main page-------------------- */
+
+/* The same CSS is applied to all the background images and the body */
+body#mainPage{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.50),
+        rgba(0,0,0,0.50)),
+        url("S2_Images/Forest.jpg");
+    margin:0; /* To make no space between bar and page */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+     z-index: -1; /* sending back */
+}
+
+/* CSS to place the logo on the left side of the navigation bar */
+#logo{
+    overflow:hidden;
+    position:absolute;
+
+    top: 0px; 
+    left:20px;
+    height:70px;
+
+    cursor: pointer;
+}
+
+/* To create the navigation bar and make it fixed to the top */
+.naviBar{
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    display: inline;
+
+    top: 0; /* Position the navbar at the top of the page */
+    width: 98%; /* Full width */
+    
+    border-bottom: 2px solid #95df1d;
+
+    background-color:transparent;
+	backdrop-filter: blur(10px);
+
+    text-align: right;
+    padding: 18px;
+    
+    z-index: 999;
+}
+
+/* To change the look of the links on the navigation bar */
+.naviBar a{
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* Creating a hover effect to the links */
+.naviBar a:hover{
+    color:#95df1d;
+    border-bottom: 2px solid;
+    border-color:#95df1d;
+    cursor: pointer;
+}
+
+/* TO show a welcome text on the top of the page */
+#welcomeTxt{
+    margin-top: 7%;
+    margin-left: 36%;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: white;
+}
+
+/* CSS to hold the content of all 4 student's extra pages' link */
+.container {
+    position: relative;
+    margin-top: 12%;
+}
+  
+.containerCenter {
+    position: relative;
+    margin-top: 50px;
+
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    height: 300px;
+    width: 1000px;
+
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: #95df1d;
+
+    background-color: transparent;
+	backdrop-filter: blur(5px);
+
+    color: white;
+}
+
+/* To align the image precisely into the container to fit */
+.containerCenter img{
+    max-height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+/* To align the content of the container next to the image */
+.imgContent{
+    display:inline;
+    position:absolute;
+
+    margin-top: 80px;
+    margin-left: 10%;
+
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.imgContent p{
+    text-align: center;
+    font-size: 30px;
+}
+
+.imgContent a{
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Hover effect created to show text to show the user to click on it to navigate to another browser */
+.containerCenter:hover .imgContent a{
+    display: block;
+}
+
+/* CSS for the button to go from bottom to top */
+.upGo{
+    text-align: right;
+    margin-right: 2%;
+}
+
+.upGo input{
+    background-color: transparent;
+	backdrop-filter: blur(5px);
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color:#95df1d;
+
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #95df1d;
+}
+
+.upGo input:hover{
+    color: white;
+    background-color: #95df1d;
+}
+
+/* ------------------------Footer------------------ */
+/* CSS to design the footer */
+#aboutUs{
+    color: white;
+    font-size: 16px;
+    margin-left: 2%;
+}
+
+#aboutUs a:link{
+    color: white;
+}
+
+#aboutUs a:visited{
+    color: white;
+}
+
+#aboutUs a:hover{
+    color: #95df1d;
+}
+
+
+/* ----------------------CSS for VisitSriLanka----------------------- */
+
+body#visitSriLanka{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.50),
+        rgba(0,0,0,0.50)),
+        url("S2_Images/Forest.jpg");
+    margin:0; /* To make no space between bar and page */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+    z-index: -1; /*sending back */
+}
+
+/* To show a text on top of the page */
+#answerTopic{
+    margin-top: 5%;
+
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+/* Creating a container to store an image and some content next to it */
+#contentContainer{
+    margin-top: 15%;
+}
+
+.contentBox{
+    position: relative;
+    margin-top: 50px;
+
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    height: 300px;
+    width: 90%;
+
+    color: white;
+}
+
+/* Aligning the heading of each container */
+.contentBox h1{
+    margin-top: 150px;
+    margin-bottom: 40px;
+
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+    border-color: #95df1d;
+
+    text-align: center;   
+}
+
+.contentBox img{
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: #95df1d;
+
+    max-height: 100%;
+    margin-right: 50px;
+
+    transition: all 0.4s;
+}
+
+.contentBox img:hover{
+    transform:scale(1.10);
+}
+
+.contentBox p {
+    display:inline;
+    position:absolute;
+    float: left;
+
+    margin-top: 48px;
+    margin-left: 40px;
+
+    width:40%;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Creating another container to store an image and some content next to it and align the image to the right*/
+.contentBox1{
+    position: relative;
+    margin-top: 50px;
+
+    left:50%;
+    transform: translate(-50%, -50%);
+
+
+    height: 300px;
+    width: 90%;
+    color: white;
+}
+
+/* CSS of .contentBox is similar to this */
+.contentBox1 h1{
+    margin-top: 150px;
+    margin-bottom: 40px;
+
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+    border-color: #95df1d;
+
+    text-align: center;   
+}
+
+.contentBox1 img{
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: #95df1d;
+
+    max-height: 100%;
+    margin-left: 50%;
+
+    transition: all 0.4s;
+}
+
+.contentBox1 img:hover{
+    transform:scale(1.10);
+}
+
+.contentBox1 p{
+    display:inline;
+    position:absolute;
+    float: left;
+
+    margin-top: 80px;
+    margin-left: 5%;
+
+    width:40%;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Creating container to display some extra content on the bottom of the page */
+#extraContent{
+    display: flex;
+    margin: auto;
+}
+
+/* Designing the text for the heading */
+#extraContentHead{
+    color: white;
+    font-size: 30px;
+
+    margin-top: 150px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+    border-color: #95df1d;
+
+    text-align: center;
+}
+/* CSS to create boxes to align next to each other */
+.contentBox2{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-bottom: 8%;
+
+    height: 250px;
+    width: 300px;
+
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.contentBox2:hover{
+    transform:scale(1.10);
+}
+
+.contentBox2 img{
+    max-width: 100%;
+
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: #95df1d;
+    background-color: transparent;
+	backdrop-filter: blur(5px);
+}
+
+.contentBox2 p{
+    margin-top: 10px;
+
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+/* -------------------CSS for CommentsForm*-------------------*/
+
+body#commentForm{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.50),
+        rgba(0,0,0,0.50)),
+        url("S2_Images/Forest.jpg");
+
+    margin:0; /* To make no space between bar and page */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+    z-index: -1; /*sending back */
+}
+
+/* CSS to create a thank you note to display when the form is submitted */
+#thankYou{
+    display: none;
+    position: relative;
+
+    margin-top: 18%;
+    margin-bottom: 10%;
+
+    left:50%;
+    transform: translate(-50%);
+
+
+    background-color: #f1f1f1;
+
+    height: 200px;
+    width: 400px;
+
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: #95df1d;
+
+    background-color: transparent;
+	backdrop-filter: blur(5px);
+}
+
+#thankYou p{
+    margin-top: 18%;
+    text-align: center;
+
+    font-size: 50px;
+    color: white;
+}
+
+/* CSS to provide a heading to the form */
+#commentText{
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    font-size: 50px;
+    color: white;
+}
+
+/* Creating a container to hold the input fields */
+#formContainer{
+    position: relative;
+    margin-bottom: 7% ;
+
+    top: 50%;
+    left:50%;
+    transform: translate(-50%);
+
+    background-color: #f1f1f1;
+
+    height: 850px;
+    width: 800px;
+
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: #95df1d;
+
+    background-color: transparent;
+	backdrop-filter: blur(5px);
+}
+
+#formComments{
+    margin:8%;
+}
+
+/* CSS to align the input fields inside the container */
+.nameContact{
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+
+/* Adjusting the label of each input field */
+.name label{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: white; 
+}
+
+#lnameID {
+    padding-left: 80px;
+}
+
+#telID{
+    padding-left: 80px;
+}
+
+#email{
+    margin-left: 34px;
+}
+
+/* Adjusting the label of each input field */
+#formContainer label{
+    margin-left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: white;
+}
+
+/* CSS to for the input fields to maintain consistency */
+#formContainer input{
+    background-color: transparent;
+	backdrop-filter: blur(5px);
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: white;
+
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #95df1d;
+}
+
+/* changing the colour of the placeholder to white */
+#formContainer input::placeholder{
+    color: white;
+    font-size: 14px;
+}
+
+/* CSS for the drop down menu to align in the container */
+#deviceList{
+    margin-top: 4%;
+    margin-bottom: 20px;
+}
+
+/* CSS to design the look of the drop down menu */
+#device{
+    background-color: transparent;
+	backdrop-filter: blur(5px);
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: white;
+
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #95df1d;
+}
+
+#device option{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+
+    color: #95df1d;
+}
+
+/* CSS to design the look of the comment box */
+#formContainer textarea{
+    background-color: transparent;
+	backdrop-filter: blur(5px);
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #95df1d;
+    color: white;
+}
+
+/* CSS for the rating star system */
+#rating{
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* To align the stars to the center */
+#rateContent{
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#rating img{
+    height:30px;
+    padding: 40px
+}
+
+ /* Hiding the radio buttons to display only the labels with the image to the user  */
+#rating input{
+    display:none;
+}
+
+/* CSS to create the warning boxes to appear when required field are found incorrect 
+Align them on the right position and hiding them to display using javascript when required */
+#warningName{
+    display: none;
+
+    height:40px;
+    width: 600px;
+
+    margin-left: 6px;
+    
+    font-size: 16px;
+    color: white;
+    background-color: rgb(141, 0, 0);
+}
+
+#incorrectName{
+    display: none;
+
+    position: absolute;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 25%;
+}
+
+#warning{
+    display: flex;
+    margin-left: 15px;
+}
+
+#warningTel{
+    display: none;
+
+    height:40px;
+    width: 250px;
+
+    margin-left: 351px;
+    margin-right: 120px;
+    margin-bottom: 20px;;
+    
+    font-size: 16px;
+    color: white;
+    background-color: rgb(141, 0, 0);
+}
+
+#incorrectTel{
+    display: none;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+#warningRate{
+    display: none;
+
+    height:40px;
+    width: 500px;
+
+    margin-left: 13.5%;
+    
+    font-size: 16px;
+    color: white;
+    background-color: rgb(141, 0, 0);
+}
+
+#incorrectRate{
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 28%;
+
+    text-align: center;
+}
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+/* CSS to align the reset and submit buttom */
+#controlBtns {
+    margin-top: 5%;
+    margin-left: 75%;
+}
+
+/* CSS to design the reset and submit buttom */
+#controlBtns input{
+    background-color: transparent;
+	backdrop-filter: blur(5px);
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color:#95df1d;
+
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #95df1d;
+    
+    margin-right: 20px;
+}
+
+/* To provide a interactive effect when going over the button */
+#controlBtns input:hover{
+    color: white;
+    background-color: #95df1d;
+}

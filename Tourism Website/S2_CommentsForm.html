@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="S2_StyleSheet.css">
+        <script src="S2_validator.js"></script>
+
+        <title>Comments</title>
+    </head>
+
+    <body id="commentForm">
+        <!-- Creating the navigation bar -->
+        <header>
+            <div class="naviBar">  
+                <img src="S2_Images/Logo.png" alt="Logo" id="logo" onclick='window.location.href="S2_HomePage.html"'>
+                <a id="home" href="S2_HomePage.html">Home</a>
+                <a id="gallery" href="S4_Gallery.html">Gallery</a>
+                <a id="comment" href="S2_CommentsForm.html">Comment</a> 
+                <a id="shop" href="S1_buyProducts.html">Shop</a>
+                <a id="quiz" href="S3_Quiz.html">Quiz</a>
+                <a id="siteMap" href="S4_Sitemap.html">Site Map</a>
+                <a id="about" href="S3_about_us.html">About us</a>
+            </div>
+        </header>
+
+        <div id="thankYou">
+            <p>Thank you!</p>
+        </div>
+
+        <div id="commentText">Comment here</div>
+
+        <div id="formContainer">
+            <!-- Creating the form -->
+            <form id="formComments" action="#" name="FormComs" method="post" onsubmit="formCheck(event)">
+
+                <!-- Creating input fields with labels to get the name of the user -->
+                <div class="nameContact">
+                    <label for="fname">First name:</label>
+                    <br>
+                    <input type="text" id="fname" name="fname" placeholder="Your First Name" autofocus required>                
+                    
+                    <label for="lname" id="lnameID">Last name:</label>
+                    <br>
+                    <input type="text" id="lname" name="lname" placeholder="Your last Name" required>
+                </div>
+                
+                <!-- To display warning when invalid inputs are given -->
+                <div id="warningName" >
+                    <div id="incorrectName"> This field can contain only alphabets </div>
+                </div>
+                
+                <!-- Creating input fields with labels to get the email address and the number of the user -->
+                <div class="nameContact" >
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    
+                    <label for="telephone" id="telID">Telephone:</label>
+                    <br>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Your Phone number">
+                </div>
+
+                <!-- To display warning when invalid inputs are given -->
+                <div id="warningTel" >
+                    <div id="incorrectTel"> Field can contain only numbers </div>
+                </div>
+
+                <!-- Creating a drop down menu -->
+                <div id="deviceList">
+                    <label for="device">Device used</label>
+                    <select name="device" id="device">
+                        <option value="Not selected"> Please select</option>
+                        <option value="Smartphone">Smartphone</option>
+                        <option value="iPad/Tablet">Ipad/Tablet</option>
+                        <option value="PC">Personal Computer</option>
+                        <option value="Others">Other devices</option>
+                    </select>
+                </div>
+
+                <!-- Creating the comment box -->
+                <div>
+                    <label for="comment">Comment</label>
+                    <br>
+                    <textarea id="comment" name="comment" rows="8" cols="70" required></textarea>
+                </div>
+
+                <!-- Creating the rating star with radio buttons -->
+                <div id="rating">
+                    <div id="rateContent">Rate us<br>From 1-5 stars </div>
+
+                    <input type="radio" name="star" value="1" id="star1">
+                    <label for="star1"><img id="image1" src="S2_Images/Uncoloured.png" alt="star image" onclick="colorChange(2)"></label>
+        
+                    <input type="radio" name="star" value="2" id="star2">
+                    <label for="star2"><img id="image2" src="S2_Images/Uncoloured.png" alt="star image" onclick="colorChange(3)"></label>
+        
+                    <input type="radio" name="star" value="3" id="star3">
+                    <label for="star3"><img id="image3" src="S2_Images/Uncoloured.png" alt="star image" onclick="colorChange(4)"></label>
+        
+                    <input type="radio" name="star" value="4" id="star4" >
+                    <label for="star4"><img id="image4" src="S2_Images/Uncoloured.png" alt="star image" onclick="colorChange(5)"></label>
+                        
+                    <input type="radio" name="star" value="5" id="star5">
+                    <label for="star5"><img id="image5" src="S2_Images/Uncoloured.png" alt="star image" onclick="colorChange(6)"></label>
+                </div>
+
+                <!-- To display warning when invalid inputs are given -->
+                <div id="warningRate">
+                    <div id="incorrectRate"> Rate Us </div>
+                </div>
+
+                <!-- Creating the reset and submit buttons -->
+                <div id="controlBtns">
+                    <input type="reset" id="reset" onclick="defaultStar()">
+                    <input type="submit" id="submit">
+                </div>
+                
+            </form>
+        </div>
+        
+         <!-- Creating the button to go to the top on click -->
+        <div class="upGo">
+            <input type="button" value="Go up" onclick='window.location.href="S2_CommentsForm.html"'>
+        </div>
+        
+        <hr>
+
+        <!-- Creating the footer -->
+        <footer id="aboutUs">
+            <p> Author: Hasmithan Kumararaja<br>
+            <a href="S2_PageEditor.html"> Page Developer Details </a> 
+            </p>
+        </footer>
+
+        <!-- JavaScript to show the active page -->
+        <script>
+            document.getElementById("form").style.backgroundColor="#95df1d";
+            document.getElementById("form").style.color="#054100";
+            document.getElementById("form").style.border="none";
+        </script>
+
+    </body>
+</html>

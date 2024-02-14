@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="S3_Quizstyle.css">
+    <title>Quiz</title>
+</head>
+<body>
+
+    <header>
+        <div class="naviBar">  
+            <img src="S3_Images/Logo.jpg" alt="Logo" id="logo" onclick='window.location.href="S2_HomePage.html"'>
+            <a id="home" href="S2_HomePage.html">Home</a>
+            <a id="gallery" href="S4_Gallery.html">Gallery</a>
+            <a id="comment" href="S2_CommentsForm.html">Comment</a> 
+            <a id="shop" href="S1_buyProducts.html">Shop</a>
+            <a id="quiz" href="S3_Quiz.html">Quiz</a>
+            <a id="siteMap" href="S4_Sitemap.html">Site Map</a>
+            <a id="hotel" href="S3_hotel.html">Hotels </a>
+            <a id="about" href="S3_about_us.html">About us</a>
+        </div>
+    </header>
+    
+
+                                  <!--  content in qustion block  -->
+    <div class="quiz_main" id="quiz_main">
+
+        <!-- timer -->
+
+        <div class="timer" id="main_timer_container">
+            <h1 id="timerHead">YOU HAVE</h1><br>
+            <span id="time">10:00</span><br>
+            <h1>Time Remaining</h1>
+        </div>       
+        
+
+            
+
+
+        <!-- main question page left side description -->
+
+        <div class="left_content" id="left_content">
+            <div class="description">
+                <h1>Are you ready to test your knowladge on <span>Sri-lanka Tourism</span>?</h1>
+                <hr>
+                <h2>Here's your Chance</h2>
+                <p>Hit the Start Button to paricipate in our quiz. 
+                    This quiz consist of 10 simple Tourism related multiple choise questions.
+                    You'll be given 1 minutes to finish the Quiz.
+                    </p>
+                <h1>Ready! GO!</h1>
+            </div>
+        </div>
+        
+        <div class="question_box" id="question_container">
+
+            <div class="input_btn_container">
+                <input type="button" id="quiz_start_btn" value="Start">
+                <input type="button" id="quiz_finish_btn" value="Finish">
+                <input type="button" id="quiz_next_btn" value="Next">
+            </div>
+
+            <div class="question">
+                <p><span>(01)</span> What is the capital city of Sri Lanka?</p>
+                <button id="answer">Colombo</button>
+                <button> Kandy </button>
+                <button>Galle</button>
+                <button>Jaffna</button>
+            </div>
+
+            <div class="question">
+                <p><span>(02)</span> Which UNESCO World Heritage site is located in Sri Lanka's Cultural Triangle?
+                </p>
+                <button>Adam's Peak</button>
+                <button>Horton Plains National Park</button>
+                <button id="answer">Sigiriya</button>
+                <button>Yala National Park</button>
+            </div>
+
+            <div class="question">
+                <p><span>(03)</span> Which city is known for its Dutch colonial architecture and beautiful beaches?</p>
+                <button>Nuwara Eliya</button>
+                <button id="answer">Galle</button>
+                <button>Anuradhapura</button>
+                <button>Trincomalee</button>
+            </div>
+
+            <div class="question">
+                <p><span>(04)</span> Which famous train journey in Sri Lanka offers breathtaking views of tea plantations?</p>
+                <button>Colombo to Galle train ride</button>
+                <button>Negombo to Jaffna train ride</button>
+                <button>Anuradhapura to Polonnaruwa train ride</button>
+                <button id="answer">Kandy to Ella train ride</button>
+            </div>
+
+            <div class="question">
+                <p><span>(05)</span> Which national park in Sri Lanka is renowned for its population of wild elephants?</p>
+                <button>Yala National Park</button>
+                <button>Wilpattu National Park</button>
+                <button>Minneriya National Park</button>
+                <button id="answer">Udawalawe National Park</button>
+            </div>
+
+            <div class="question">
+                <p><span>(06)</span> Which famous festival takes place in Kandy to honor the Sacred Tooth Relic of the Buddha?</p>
+                <button>Sinhala New Year</button>
+                <button id="answer"> Esala Perahera</button>
+                <button>Vesak Festival</button>
+                <button>Navam Perahera</button>
+            </div>
+
+            <div class="question">
+                <p><span>(07)</span>Which city is known as the "Cultural Capital" of Sri Lanka?</p>
+                <button id="answer">Kandy</button>
+                <button> Colombo</button>
+                <button>Polonnaruwa</button>
+                <button>Negombo</button>
+            </div>
+
+            <div class="question">
+                <p><span>(08)</span> Which beautiful beach town is famous for its stilt fishermen?</p>
+                <button>Arugam Bay</button>
+                <button id="answer">Mirissa</button>
+                <button>Unawatuna</button>
+                <button>Bentota</button>
+            </div>
+
+            <div class="question">
+                <p><span>(09)</span> Which waterfall, located in the central highlands of Sri Lanka,<br> is one of the tallest in the country?
+                </p>
+                <button id="answer">Bambarakanda Falls</button>
+                <button>Ravana Falls</button>
+                <button>Diyaluma Falls</button>
+                <button>Dunhinda Falls</button>
+            </div>
+
+            <div class="question">
+                <p><span>(10)</span> Which ancient city in Sri Lanka <br>
+                    is known for its well-preserved ruins and sacred stupas?</p>
+                <button>Dambulla</button>
+                <button id="answer">Anuradhapura</button>
+                <button>Polonnaruwa</button>
+                <button>Sigiriya</button>
+            </div>
+
+        </div>
+
+        <!-- go to performance report button -->
+
+        <div id="view_performance">
+            <a href="#quiz_report" id="down_arrow"><img src="S3_Images/Student3_down_arrow.png" alt="down arrow"></a>
+            <h1>view Your Performance</h1>
+        </div>
+
+
+        <!-- question score board -->
+
+
+        <div class="score_board" id="score_board">
+            <div class="score_container">
+                <h1>Your Score</h1>
+                <div class="score_box">
+                    <h1><span id="score_display"></span>/20</h1>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- quiz performance report -->
+
+    <div class="quiz_report" id="quiz_report">
+        <h1>Your Performance!</h1>
+        <div class="report_head">
+            <div class="correct box"></div><span>Correct Answer</span>
+            <div class="wrong box"></div><span>Wrong Answer</span>
+            <div class="given box"></div><span>Given Answer</span>
+        </div>
+
+        <!-- top button -->
+        <a href="#score_board"><button id="topbtn">TOP</button></a>
+        
+
+    </div>
+
+    
+    <!--  developer page button  -->
+
+    <a href="S3_Page_Editor.html"><button class="dev_page">Developer Page</button></a>
+
+
+    <script>        
+        document.getElementById("quiz").style.backgroundColor="#95df1d";
+        document.getElementById("quiz").style.color="#054100";
+        document.getElementById("quiz").style.border="none";
+    </script>
+
+    <script src="S3_QuizScript.js"></script>
+</body>
+</html>

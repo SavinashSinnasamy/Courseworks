@@ -1,0 +1,577 @@
+#logo{
+    overflow:hidden;
+    position:absolute;
+
+    top: 0px; 
+    left:20px;
+    height:70px;
+
+    cursor: pointer;
+}
+
+.naviBar{
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    display: inline;
+
+    top: 0; /* Position the navbar at the top of the page */
+    width: 98%; /* Full width */
+    
+    border-bottom: 2px solid #95df1d;
+
+    background-color:transparent;
+	backdrop-filter: blur(10px);
+
+    text-align: right;
+    padding: 18px;
+    
+    z-index: 999;
+}
+
+.naviBar a{
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.naviBar a:hover{
+    color:#95df1d;
+    border-bottom: 2px solid;
+    border-color:#95df1d;
+    cursor: pointer;
+}
+
+
+/* Style sheet for the presentation page */
+.presentationContainer { /*container which has student role details*/
+    float: left;
+    width: 245px;
+    margin: 10px 10px 0 0;
+    padding:2px;
+    display: inline;
+    border: 2px solid #95df1d;
+    border-radius: 10px;
+}
+
+.presentationImage {
+    height: 180px;
+    width: 180px;
+    margin: 12px 5px 5px 5px;
+    position: relative;
+
+}
+.presentationNames {
+    margin: 10px 10px 10px 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+}
+  
+#total {
+    text-align: center;
+    position: fixed;
+    top:18%;
+    left:26%;
+    transform: translate(-15%, -15%);
+}
+.presentationBody {
+    overflow: scroll;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),
+    url("S1_Images/Forest.jpg");
+    width:fit-content;
+    height:100wh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.presentationHeading{ 
+    color: white;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.presentationHeading2{ 
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* Style sheet for buy products */
+.storeHeading {
+    position: relative;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    left: 20px;
+    top: 30px;
+    /*-webkit-text-stroke: 1px white; /*Adding a border to the text*/
+}
+.heading3{
+    margin-top: 15px;
+    background-color: black;
+    width: 1500px;
+    border-color: 2px solid white ;
+    height: 30px;
+}
+.heading3Text {
+    padding-top: 5px;
+    color: white;
+    text-align: center;
+}
+.order{ /*place order button*/
+    float: right;
+    font-weight: bold;
+    background-color: #95df1d;
+    color: black;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+.price {
+    color: black;
+    font-size: medium;
+    font-weight: bolder;
+    text-align: right;
+    margin-right: 2px;
+}
+.price:hover{
+    color: white;
+}
+.name {
+    text-align: left;
+    color: black; 
+    font-size: 18px;
+}
+
+.detail{
+    padding-top: 25%;
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-left: 5px;
+    text-align: left;
+}
+#viewCart { /* cart button*/
+    left: 1350px;
+    position:absolute;
+    top: 70px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #95df1d;
+    padding: 10px;
+    height: 40px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#myCart { /*popping container to have ordered products*/
+    z-index: 1; /*placing the division over other*/
+    position: absolute;
+    display: none;
+    height: 600px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #95df1d;
+    left:68%;
+    padding-left: 2%;
+    margin: 5px 5px 5px 5px ;
+    overflow: scroll;
+
+}
+.product { /*the container which has product detals*/
+    background-color: rgb(240, 240, 240);
+    width: 250px;
+    height: 210px;
+    margin: 6px ;
+    border-radius: 10px;
+    position:relative;
+    display: inline-block;
+    padding: 20px; 
+    overflow:visible;
+}
+.product:hover {
+    background-color: #95df1d;
+    padding: 30px;
+    border: 1px solid white;
+    transition: 0.4s;
+}
+#buyButton { /*buy now button*/
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    background-color: #95df1d;
+    color: white;
+    border-color: black;
+    bottom: 1%;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+}
+.buyProductImage {
+    float: left;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    padding: 5px;  
+}
+.test { /*product divisons*/
+    text-align: center;
+    white-space: nowrap;
+}
+
+.readMore:hover {
+    color: red;
+}
+.readMore {
+    font-size: 15px;;
+    color: blueviolet;
+}
+#viewCart:hover {
+    background-color: #95df1d;
+    color: black;
+}
+.order:hover {
+    background-color: white;
+    color: black;
+}
+.BuyProductsTotal{
+    display: inline=block;
+    text-align: right;
+    padding : 5px 5px 5px 5px;
+}
+#cart-footer{
+    display: inline-block;
+    position: relative;
+}
+#buyButton:hover{
+    background-color:gray ;
+    color: black;
+}
+
+/*----------------------------------------------*/
+/* View Cart*/
+.cart-product { /*the container which has product detals*/
+    padding:2%;
+    width: 360px;
+    height: 110px;
+    position:relative; 
+    overflow:hidden; 
+}
+
+.cart-Image {
+    float: left;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding: 2px;  
+}
+
+.cart-price{
+    right:-20px;
+    text-align: right;
+    padding-right: 25px;
+    position:absolute;
+}
+
+.remove {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: black;
+    background-color: gray;
+    color:white;
+    padding: 3px;
+    margin: 3px;
+    width: 80px;
+
+}
+.remove:hover {
+    background-color: #95df1d;
+    color: black;
+}
+#clearButton:hover{
+    background-color: white;
+    color: black;
+}
+#product1,#product2,#product3,#product4,#product5,#product6,#product7,#product8,#product9,#product10,#product11,#product12,#product13,#product14,#product15 {
+    display: none;
+}
+
+/*Counter css*/
+.counter{
+    width:15%;
+    display: flex;
+}
+.increase,.decrease{
+    height:20px;
+    width:20px;
+    padding:2px;
+    border-radius: 20px;
+    border:1px solid black;
+    align-items: center;
+}
+.count {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*--------------------------------------------------------------------------*/
+/* Style sheet for payments page */
+#paymentBill {
+    /*placing the division over other*/
+    position: absolute;
+    display: none;
+    height: 1510px;
+    width: 1100px;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),
+    url("S1_Images/Forest.jpg");
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #95df1d;
+    padding-left: 2%;
+    margin: 0 5px 5px 5px ;
+    top: 70px;
+    left:170px;
+    z-index: 998;
+}
+#paymentHeading1{
+    font-size:48px;
+    color: white;
+    position: relative;
+}
+#cancel {
+    font-family: 'Times New Roman', Times, serif;
+    top:3%;
+    position: absolute;
+    left:85%;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px; 
+    height: 3%;
+}
+.labels { /*form label*/
+    display: inline-block;
+    width: 5%;
+    font-weight:bold;
+}
+.formDiv{	
+    position: relative;
+    margin-bottom:20px;
+    color: white;
+}
+
+.formAlignment {
+    margin-left: 25px;
+    margin-right: -300%;
+}
+
+.paymentFormbox { /*seperating form and adding border*/
+    border: 2px solid #95df1d;
+    background-color: rgb(37, 36, 36);
+    border-radius: 10px;
+    width: 800px;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+.formInput{ 
+    width: 10%;
+    height: 30px;
+}
+#form { /* form container*/
+    top:8%;
+    left: 10%;
+    position: absolute;
+}
+.headerLine {
+    border: 1px solid #95df1d;
+    position: relative;
+}
+.radioButtons {
+    padding: 25px;
+    display: inline;
+    font-size: 20px;
+    accent-color: rgb(27, 247, 60);
+}
+#clearButton{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: red;
+    color:white;
+    padding: 10px;
+    margin: 10px;
+}
+
+#clearButton:hover{
+    background-color: white;
+    color: red;
+} 
+#reset{
+    left:20%;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+#submitButton{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+#submitButton:hover {
+    background-color: #95df1d;
+}
+#paymentButton {
+
+    float: right;
+}
+#paymentBillHeader {
+    display: inline-flex;
+}
+/*Footer*/
+.upGo{
+    text-align: right;
+    margin-right: 2%;
+}
+
+.upGo input{
+    background-color: transparent;
+	backdrop-filter: blur(5px);
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color:#95df1d;
+
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #95df1d;
+}
+
+.upGo input:hover{
+    color: white;
+    background-color: #95df1d;
+}
+
+/* ------------------------Footer------------------ */
+.aboutUs{
+    color: white;
+    font-size: 16px;
+}
+
+/* Content Page CSS*/
+.contentPage{
+    color: white;
+}
+.HStext{
+    color: white;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.heading2{
+    color: white;
+    padding-left: 5px;
+    background-color: black;
+}
+.heading3{
+    color: white;
+    padding-left: 5px;
+}
+#SriLankamap{
+    float: right;
+    position: relative;
+    padding:2px;
+    font-style: italic;
+    color: white;
+    padding: auto;
+    text-align: center;
+}
+#anuradhapuraimg{
+    font-style: italic;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: auto;
+    
+}
+#polonnaruwa{
+    height: 250px;
+    width:300px;
+}
+#Anuradhapuraimage{
+    color: white;
+}
+#polonnaruwaimage{
+    float: right;
+    position: relative;
+    padding-bottom: 10px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+}
+#Anuimg{
+    height: 250px;
+    width:300px;
+    margin: 10px 10px 10px 10px;
+}
+#flagImage{
+    color: white;
+    text-align: center;
+}
+
+#slImage:hover{
+    padding: 20px;
+    transition: 0.4s;
+}
+#polonnaruwa:hover{
+    padding: 20px;
+    transition: 0.4s;
+}
+#Anuimg:hover{
+    padding: 20px;
+    transition: 0.4s;
+}
+#SriLankamap:hover{
+    padding: 20px;
+    transition: 0.4s;
+}
+
+/*Page editor css*/
+#pageEditor{
+    background-color: pink;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+    
+#White_portion{
+    background-color:white;  
+    height: 115px;	
+}	
+.links{
+    color: black;
+}

@@ -1,0 +1,34 @@
+body{margin-left:0px;
+	 background-image: url("S4_Images/Forest.jpg");}
+			 
+img{margin-top:10%;
+	margin-left:36px;
+	border: 2.5px solid #95df1d;
+	border-radius: 25px;
+	height: 500px;
+	width: 95%;}
+			
+hr.flared{overflow: visible;/*-------This creates an upturned flared horizontal rule*/
+		  height: 30px;
+		  border-style: solid;
+		  border-color: #95df1d;
+		  border-width: 1.5px 0 0 0;
+		  border-radius: 20px;
+		  margin-left:35px;
+		  width: 95.25%;}
+			  
+hr.flared:before {display: block;/*--------This creates an inverted flared horizontal rule of the above uptured horizontal rule.*/
+				  content: "";
+				  height: 30px;
+				  margin-top: -31px;
+				  border-style: solid;
+				  border-color: #95df1d;
+				  border-width: 0 0 1px 0;
+				  border-radius: 20px;}	
+
+circle:hover {cursor: pointer;
+		      stroke: #95df1d;	
+              stroke-width: 4px;}
+				  
+.SVG{font-weight: bold;
+     margin-left: 35%;}

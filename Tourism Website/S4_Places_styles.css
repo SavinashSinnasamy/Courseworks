@@ -1,0 +1,108 @@
+body{margin-left:0px;
+	 margin-top:0px;
+	 background-image: url("S4_Images/Forest.jpg");
+	 background-size: cover;/*------------This line of code makes the image fit the viewport*/
+	 backdrop-filter: blur(5px);/*--------This line of code blurs the background*/
+	 color: white;}
+	
+h1{text-align: center;}
+	
+h2{text-align: center;
+   font-size: 32px;}
+		   
+p{text-align: justify;
+  font-size: 20px;
+  padding: 45px;
+  line-height: 1.5;}
+			
+#Colombo{width: 90%;/*-------------------------------------------------------------"#Colombo" to "#Anuradhapura" add images to individual <div> tags positioned in the HTML code.*/
+		 height: 700px;
+		 background: url("S4_Images/Colombo.jpg");
+		 background-size: cover;
+		 margin-left: 5%;
+		 border-radius: 15px;}
+			 
+#Sigiriya{width: 90%;
+		  height: 600px;
+		  background: url("S4_Images/Sigiriya.png");
+		  background-size: cover;
+		  margin-left: 5%;
+		  border-radius: 15px;}
+				 
+#Ella{width: 90%;
+	  height: 600px;
+	  background: url("S4_Images/Ella.jpg");
+	  background-size: cover;
+	  margin-left: 5%;
+	  border-radius: 15px;}
+				 
+#Kandy{width: 90%;
+	   height: 600px;
+	   background: url("S4_Images/Kandy.jpg");
+	   background-size: cover;
+	   margin-left: 5%;
+	   border-radius: 15px;}
+			   
+#Mirissa{width: 90%;
+		 height: 600px;
+		 background: url("S4_Images/Mirissa.jpg");
+		 background-size: cover;
+		 margin-left: 5%;
+		 border-radius: 15px;}
+
+#Horton_plains{width: 90%;
+			   height: 600px;
+			   background: url("S4_Images/Horton_plains.jpg");
+			   background-size: cover;
+			   margin-left: 5%;
+			   border-radius: 15px;}
+
+#Sinharaja{width: 90%;
+		   height: 600px;
+		   background: url("S4_Images/sinharaja.jpg");
+		   background-size: cover;
+		   margin-left: 5%;
+		   border-radius: 15px;}
+
+#Yala{width:90%;
+	  height:600px;
+	  background: url("S4_Images/Yala.jpg");
+	  background-size: cover;
+	  margin-left: 5%;
+	  border-radius: 15px;}
+		
+#Adams_peak{width: 90%;
+			height: 600px;
+			background: url("S4_Images/Adams_peak.jpg");
+			background-size: cover;
+			margin-left: 5%;
+			border-radius: 15px;}
+
+#Anuradhapura{width: 90%;
+			  height: 600px;
+			  background: url("S4_Images/Ruwanwelisaya_Anuradhapura.jpg");
+			  background-size: cover;
+			  margin-left: 5%;
+			  border-radius: 15px;}/*-------------------------------------------------------------End of block appending images to <div> tags.*/			
+
+hr.tapered{border: 0;/*---------------------------------------------------------------------------------------------------This block creates a tapering horizontal rule with a fading effext.*/
+		   height: 2px;
+		   background-image: linear-gradient(to right, rgba(0, 255, 0, 0), rgba(0, 255, 0, 0.75), rgba(0, 255, 0, 0));
+		   width: 93%;}	
+		   
+hr.flared{overflow: visible;/*-------This creates an upturned flared horizontal rule*/
+		  height: 30px;
+		  border-style: solid;
+		  border-color: #95df1d;
+		  border-width: 2px 0 0 0;
+		  border-radius: 20px;
+		  width: 93%;}
+				  
+hr.flared:before {display: block;/*--------This creates an inverted flared horizontal rule of the above uptured horizontal rule.*/
+				  content: "";
+				  height: 30px;
+				  margin-top: -31px;
+				  border-style: solid;
+				  border-color: #95df1d;
+				  border-width: 0 0 1px 0;
+				  border-radius: 20px;}

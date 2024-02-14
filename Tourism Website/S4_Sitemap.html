@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = "en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Sitemap</title>
+	
+	<link rel="stylesheet" href="S4_NavBar.css">
+	<link rel="stylesheet" href="S4_Sitemap_styles.css">
+	
+	<script>
+	document.getElementById("siteMap").style.backgroundColor="#95df1d";//Code block pertaining to navigation bar.
+	document.getElementById("siteMap").style.color="#054100";
+	document.getElementById("siteMap").style.border="none";
+	</script>
+	
+</head>
+
+
+<body>
+	<header>
+		<div class="naviBar">  
+			<img src="S4_Images/Logo.png" alt="Logo" id="logo" onclick='window.location.href="S2_HomePage.html"'>
+			<a id="home" href="S2_HomePage.html">Home</a>
+			<a id="gallery" href="S4_Gallery.html">Gallery</a>
+			<a id="comment" href="S2_CommentsForm.html">Comment</a> 
+			<a id="shop" href="S1_buyProducts.html">Shop</a>
+			<a id="quiz" href="S3_Quiz.html">Quiz</a>
+			<a id="siteMap" href="S4_Sitemap.html">Site Map</a>
+			<a id="visit" href="S4_Places.html"> Visit Sri Lanka </a>
+			<a id="about" href="S3_about_us.html">About us</a>
+		</div>
+	</header>
+	
+	<img src = "S4_Images/Background_cropped.jpg" alt="Cropped background"><br><br>
+	
+	<hr class = "flared"><!--Flared horizontal rule for aesthetic purpose-->
+	
+	<div>
+    <svg class = "SVG" width="510" height="150">
+	
+      <a href="S2_HomePage.html"> 
+        <circle cx="50" cy="115" r="32" fill="#F44336" stroke="white" stroke-width="4"/><!--Child node 1-->
+		<text x="50" y="117.5" font-size="11" text-anchor="middle" fill="white">Content</text>
+		<line x1="50" y1="81" x2="50" y2="74" stroke="white" stroke-width="4"/><!--Line jutting out from child node 1-->
+      </a>
+	  
+      <a href="S1_buyProducts.html">
+        <circle cx="120" cy="115" r="32" fill="#E91E63" stroke="white" stroke-width="4"/><!--Child node 2-->
+		<text x="120" y="117.5" font-size="11" text-anchor="middle" fill="white">Product</text>
+		<line x1="120" y1="81" x2="120" y2="74" stroke="white" stroke-width="4"/><!--Line jutting out from child node 2-->
+      </a>
+	  
+      <a href="S2_CommentsForm.html">
+        <circle cx="190" cy="115" r="32" fill="#9C27B0" stroke="white" stroke-width="4"/><!--Child node 3-->
+		<text x="190" y="117.5" font-size="11" text-anchor="middle" fill="white">Comments</text>
+		<line x1="190" y1="81" x2="190" y2="74" stroke="white" stroke-width="4"/><!--Line jutting out from child node 3-->
+      </a>
+	  
+      <a href="S3_Quiz.html">
+        <circle cx="260" cy="115" r="32" fill="#673AB7" stroke="white" stroke-width="4"/><!--Child node 4-->
+		<text x="260" y="117.5" font-size="11" text-anchor="middle" fill="white">Quiz</text>
+		<line x1="260" y1="81" x2="260" y2="74" stroke="white" stroke-width="4"/><!--Line jutting out from child node 4-->
+      </a>
+	  
+      <a href="S3_about_us.html">
+        <circle cx="330" cy="115" r="32" fill="#3F51B5" stroke="white" stroke-width="4"/><!--Child node 5-->
+		<text x="330" y="117.5" font-size="11" text-anchor="middle" fill="white">About Us</text>
+		<line x1="330" y1="81" x2="330" y2="74" stroke="white" stroke-width="4"/><!--Line jutting out from child node 5-->
+      </a>
+	  
+      <a href="S4_Sitemap.html">
+        <circle cx="400" cy="115" r="32" fill="#2196F3" stroke="white" stroke-width="4"/><!--Child node 6-->
+		<text x="400" y="117.5" font-size="11" text-anchor="middle" fill="white">Sitemap</text>
+		<line x1="400" y1="81" x2="400" y2="74" stroke="white" stroke-width="4"/><!--Line jutting out from child node 6-->
+      </a>
+	  
+      <a href="S4_Gallery.html">
+        <circle cx="470" cy="115" r="32" fill="#03A9F4" stroke="white" stroke-width="4"/><!--Child node 7-->
+		<text x="470" y="117.5" font-size="11" text-anchor="middle" fill="white">Gallery</text>
+		<line x1="470" y1="81" x2="470" y2="74" stroke="white" stroke-width="4"/><!--Line jutting out from child node 7-->
+      </a>
+	  
+      <a href="S2_HomePage.html"><!--Root Node-->
+        <circle cx="260" cy="34" r="32" fill="#4CAF50" stroke = "white" stroke-width="4"/>
+		<text x="260" y="38" font-size="15" text-anchor="middle" fill="white">HOME</text>
+		<line x1="260" y1="68" x2="260" y2="75" stroke="white" stroke-width="4"/><!--Line jutting out from root node-->
+		
+      </a><!--Horizontal line between root node and the 7 child nodes-->
+      <line x1="48" y1="75" x2="472" y2="75" stroke="white" stroke-width="4"/>
+	  
+    </svg>
+	</div>
+	
+	<br><hr class = "flared"><!--Flared horizontal rule for aesthetic purpose-->
+	
+    <div class="upGo">
+        <input type="button" value="Go up" onclick='window.location.href="S4_Sitemap.html"'>
+    </div>
+        
+    <hr>
+
+    <footer class="aboutUs">
+		<p> Author: M.A.M. Asaf <br>
+        <a href="S4_PageEditor.html"> Page Developer Details </a> 
+        </p>
+    </footer>
+	
+</body>
+</html>

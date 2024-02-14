@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="S2_StyleSheet.css">
+
+        <title>Visit Sri Lanka</title>
+    </head>
+
+    <body id="visitSriLanka">
+        <!-- Creating the navigation bar -->
+        <header>
+            <div class="naviBar">
+                <img src="S2_Images/Logo.png" alt="Logo" id="logo" onclick='window.location.href="S2_HomePage.html"'>
+                <a id="home" href="S2_HomePage.html">Home</a>
+                <a id="gallery" href="S4_Gallery.html">Gallery</a>
+                <a id="comment" href="S2_CommentsForm.html">Comment</a> 
+                <a id="shop" href="S1_buyProducts.html">Shop</a>
+                <a id="quiz" href="S3_Quiz.html">Quiz</a>
+                <a id="siteMap" href="S4_Sitemap.html">Site Map</a>
+                <a id="visit" href="S2_VisitSriLanka.html">Visit Sri Lanka</a>
+                <a id="about" href="S3_about_us.html">About us</a>
+            </div>
+        </header>
+
+        <div id="answerTopic">Here's why you should visit Sri Lanka</div>
+
+        <!-- Creating container to hold all the sub containers -->
+        <div id="contentContainer">
+
+            <!-- Creating containers to hold the content and the images -->
+            <div class="contentBox">
+                <h1>Unique Cultural Heritage</h1>
+                <img src="S2_Images/History.jpg" alt="History Image">
+                <p>
+                    The endless natural beauty of Sri Lanka lends 
+                    itself well to exploration on foot. 
+                    If postcard-worthy views and ancient cultural 
+                    sites appeal to you, head to the Cultural Triangle. 
+                    Here you can ascend to Sigiriya, an awe-inspiring palace 
+                    and fortress complex set atop a rocky plateau.
+                    <br>
+                    <br>
+                    We also highly recommend trekking through the brilliant 
+                    hills of tea country. There’s a multitude of routes including
+                     the iconic Adam’s Peak. Although the hike to reach the peak 
+                     of the mountain is a challenge, the rewards are breathtakingly 
+                     beautiful. We recommend starting early to avoid the heat of the 
+                     day and witness the orange and pink light of sunrise as you stand
+                    above the clouds.
+                </p>
+            </div>
+
+            <!-- Creating containers to hold the content and the images -->
+            <div class="contentBox1">
+                <h1>Tropical Climate</h1>
+                <p>
+                    No matter what time of year you choose to visit Sri Lanka, 
+                    you will be treated to wonderful weather. In fact, this is 
+                    one of the warmest countries in the world. The northern and 
+                    eastern regions tend to be drier and hotter, while the central 
+                    highlands see the most rainfall.
+                    <br>
+                    <br>
+                    The best time to visit Sri Lanka depends on your interests.
+                     For beach holidays, plan your trip from November to March; 
+                     for wildlife spotting, the best season is May to October.
+                </p>
+                <img src="S2_Images/Climate.jpeg" alt="Climate Image">
+            </div>
+
+            <!-- Creating containers to hold the content and the images -->
+            <div class="contentBox">
+                <h1>Epic Train Journeys</h1>
+                <img src="S2_Images/Train.png" alt="Climate Image">
+                <p>
+                    One of the best ways to explore Sri Lanka is by train. The 
+                    country has several fantastic rail routes that will carry you 
+                    through bustling cities, dense forests, deep valleys and surf 
+                    towns, promising unbelievable views along the way.
+                    <br>
+                    <br>
+                    If you only have time for one train journey, make it the one 
+                    from Colombo to Kandy. This historic route will take you from 
+                    Sri Lanka’s largest and busiest city to its tranquil cultural 
+                    capital, passing through tropical paddies and picturesque villages 
+                    as you go.
+
+                </p>
+            </div>
+
+            <!-- Creating containers to hold the content and the images -->
+            <div class="contentBox1">
+                <h1>Huge Tea Plantations</h1>
+                <p>
+                    Since the first tea bush was planted here in 1867, 
+                    Sri Lanka has become the world’s fourth largest producer
+                    of tea. In fact, you might recognise its former name – Ceylon – 
+                    as a variety of tea that’s still popular today.
+                    <br>
+                    <br>
+                    Sri Lanka’s tea country is a gorgeous expanse of undulating 
+                    green hills and lush plantations. It’s one of the only places 
+                    on earth where tea is still harvested by hand. Here you can 
+                    learn about traditional methods and sample premium brews as 
+                    you breathe in the fresh highland air.
+                </p>
+                <img src="S2_Images/Mountains.jpg" alt="Climate Image">
+            </div>
+        </div>
+
+        <!-- Creatind the heading for the extra content -->
+        <div id="extraContentHead" > Know More </div>
+
+        <!-- Creating containers to display the images and text to direct to extra content page-->
+        <div id="extraContent">
+            <div class="contentBox2" onclick='window.location.href="S1_HistoryofSriLanka.html"'>
+                <p>History of Sri Lanka</p>
+                <img src="S2_Images/History.jpg" alt="Historical Site">
+            </div>
+
+            <div class="contentBox2" onclick='window.location.href="#"'>
+                <p>Top 10 visited places</p>
+                <img src="S2_Images/Kandy.png" alt="Kandy image">
+            </div>
+
+            <div class="contentBox2" onclick='window.location.href="S3_hotel.html"'>
+                <p>Hotels to stay</p>
+                <img src="S2_Images/Hotel.jpg" alt="A Hotel">
+            </div>
+
+        </div>
+
+         <!-- Creating the button to go to the top on click -->
+        <div class="upGo">
+            <input type="button" value="Go up" onclick='window.location.href="S2_VisitSriLanka.html"'>
+        </div>
+        
+        <hr>
+
+        <!-- Creating the footer -->
+        <footer id="aboutUs">
+            <p> Author: Hasmithan Kumararaja<br>
+            <a href="S2_PageEditor.html"> Page Developer Details </a> 
+            </p>
+        </footer>
+
+        <!-- JavaScript to show the active page -->
+        <script>
+            document.getElementById("visit").style.backgroundColor="#95df1d";
+            document.getElementById("visit").style.color="#054100";
+            document.getElementById("visit").style.border="none";
+        </script>
+    </body>
+</html>

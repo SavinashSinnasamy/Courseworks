@@ -1,0 +1,38 @@
+
+a	java:S112û"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+l
+java:S2095 "PUse try-with-resources or close this "ObjectOutputStream" in a "finally" clause.(ï…ˆ…ÿÿÿÿÿ
+j
+java:S2095Ÿ"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(ã°íµıÿÿÿÿ
+S	java:S106	"9Replace this use of System.out or System.err by a logger.(“×·ôşÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(ß‘ßÃúÿÿÿÿ
+>
+java:S1940")Use the opposite operator ("!=") instead.(È×š.
+S	java:S106"9Replace this use of System.out or System.err by a logger.(àÒêçşÿÿÿÿ
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(şç±Øùÿÿÿÿ
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(¾Ğ©µ
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(äœ¯îıÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(êğ»Åÿÿÿÿÿ
+>
+java:S1940@")Use the opposite operator ("!=") instead.(È×š.
+N	java:S106A"9Replace this use of System.out or System.err by a logger.(ûµµÈ
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(şç±Øùÿÿÿÿ
+N	java:S106M"9Replace this use of System.out or System.err by a logger.(¾Ğ©µ
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(äœ¯îıÿÿÿÿ
+S	java:S106d"9Replace this use of System.out or System.err by a logger.(êğ»Åÿÿÿÿÿ
+C
+java:S1659 "'Declare "exchanged" on a separate line.(“Åãşÿÿÿÿ
+O	java:S106®"9Replace this use of System.out or System.err by a logger.(«Ğ´
+?
+java:S1940¶")Use the opposite operator ("!=") instead.(È×š.
+p
+java:S3012å"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ƒ€û
+p
+java:S3012ó"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ô¯šÂ
+p
+java:S3012ö"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(êû­¶
+p
+java:S3012…"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(î¦İ’

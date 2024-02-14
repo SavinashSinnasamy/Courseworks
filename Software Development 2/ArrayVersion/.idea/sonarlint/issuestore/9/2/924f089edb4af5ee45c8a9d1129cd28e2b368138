@@ -1,0 +1,57 @@
+
+X
+java:S6208"CMerge the previous cases into this one using comma-separated label.(ößìO
+Y
+java:S6208&"CMerge the previous cases into this one using comma-separated label.(âÃ å
+Y
+java:S6208-"CMerge the previous cases into this one using comma-separated label.(Â¯†Œ
+Y
+java:S6208H"CMerge the previous cases into this one using comma-separated label.(áÒß±
+_
+java:S6208†"CMerge the previous cases into this one using comma-separated label.(º½¢Àùÿÿÿÿ
+Z
+java:S6208Ã"CMerge the previous cases into this one using comma-separated label.(Ú¢Îî
+_
+java:S6208È"CMerge the previous cases into this one using comma-separated label.(¶öé¿ÿÿÿÿÿ
+_
+java:S6208Ì"CMerge the previous cases into this one using comma-separated label.(İõ ìşÿÿÿÿ
+Z
+java:S6208ã"CMerge the previous cases into this one using comma-separated label.(£áãÌ
+_
+java:S6208ç"CMerge the previous cases into this one using comma-separated label.(Ï•ä¯ıÿÿÿÿ
+Z
+java:S6208ì"CMerge the previous cases into this one using comma-separated label.(„‰ó÷
+‚
+java:S1192C"gDefine a constant instead of duplicating this literal "Invalid input !!
+Enter desired number
+" 9 times.(ÑëÕ„øÿÿÿÿ
+l
+java:S1192„"PDefine a constant instead of duplicating this literal "cashierData.txt" 3 times.(ÓıÕÖÿÿÿÿÿ
+s	java:S135w"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+t	java:S135´"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+t	java:S135¬"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+s	java:S127Ğ"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ÿ® Œûÿÿÿÿ
+g	java:S117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í¨éÃ
+0
+java:S1220""Move this file to a named package.
+Y
+java:S1226œ"BIntroduce a new variable instead of reusing the parameter "queue".(£…ä
+d
+java:S2095‡"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ù“ì’şÿÿÿÿ
+d
+java:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ù“ì’şÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(“×·ôşÿÿÿÿ
+n
+java:S3776
+"SRefactor this method to reduce its Cognitive Complexity from 129 to the 15 allowed.(ˆÅ§ôÿÿÿÿÿ
+[
+java:S1659"EDeclare "cashier2" and all following declarations on a separate line.(¦±Íı
+d
+java:S1659"IDeclare "cashier2null" and all following declarations on a separate line.(“æ…úÿÿÿÿ
+@
+java:S1940")Use the opposite operator ("!=") instead.(›îÔ
+n
+java:S3776–"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ì¡İÿÿÿÿÿ
+â
+java:S6541
+"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 233 to 64, Complexity from 70 to 14, Nesting Level from 5 to 2, Number of Variables from 36 to 6.(ˆÅ§ôÿÿÿÿÿ

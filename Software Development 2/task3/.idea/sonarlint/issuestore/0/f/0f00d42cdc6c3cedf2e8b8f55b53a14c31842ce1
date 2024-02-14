@@ -1,0 +1,9 @@
+
+p
+java:S1104"UMake firstName a static final constant or non-public and provide accessors if needed.(ίζΖΡύÿÿÿÿ
+k
+java:S1104"VMake secondName a static final constant or non-public and provide accessors if needed.(ίν™7
+m
+java:S1104"WMake burgerCount a static final constant or non-public and provide accessors if needed.(ΙΡ
+0
+java:S1220""Move this file to a named package.
